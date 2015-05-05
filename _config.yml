@@ -1,0 +1,13 @@
+# Site settings
+title: Raio frontendizador!
+email: raio.frontendizador@gmail.com
+description: > 
+  Raio frontendizador! Blog sobre desenvolvimento front end.
+  HTML, CSS, Javascript, por Jota Teles.
+baseurl: ""
+url: "http://teles.github.io"
+twitter_username: raiofront
+github_username:  teles
+
+# Build settings
+markdown: kramdown
