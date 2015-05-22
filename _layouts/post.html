@@ -1,15 +1,17 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-</div>
+    <section class="raio-posts-container">
+        <article class="raio-post">
+            <h2 class="raio-post-title">{{ page.title }}</h2>
+            <div class="raio-post-info">
+              <span class="raio-post-date">{{ page.date | date: "%b %-d, %Y" }}</span>
+              <!-- <span><strong>tags:</strong> <a href="">nada</a> , <a href="">inicial</a> </span> -->
+            </div>
+            <hr class="raio-separator raio-separator-primary">
+            <div class="raio-post-content">
+                {{ content }}
+                </p>
+            </div>
+        </article>          
+    </section>

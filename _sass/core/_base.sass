@@ -1,0 +1,29 @@
+*, *:before, *:after 
+   @include box-sizing(inherit)
+
+html, body
+   background: $color-gray-light
+   min-height: 100%
+   @include box-sizing(border-box)      
+   
+body    
+   background-color: $color-gray-light
+   color: #333
+   font-family: 'Open Sans', sans-serif
+   line-height: 1.5
+
+img 
+   max-width: 100%
+
+// ## Links   
+a, a:hover
+   text-decoration: none
+   color: inherit
+a:hover
+   color: inherit
+a:visited
+   color: inherit
+
+// ## Strong
+strong   
+   font-weight: 600   

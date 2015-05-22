@@ -1,0 +1,62 @@
+.raio-header
+   padding: spacing(2)
+   @media (min-width: $screen-tablet-min)
+      padding: spacing(3) spacing(2)
+   background-color: white
+   @include m-clearfix  
+   font-family: Montserrat, 'sans-serif'
+   
+   .raio-header-title
+      font-size: 16px
+      @include inline-block
+      float: left
+         
+   .raio-header-icon
+      margin-right: spacing(1)
+      color: $color-orange
+   
+   .raio-header-container
+      max-width: $screen-tablet-min
+      margin: 0 auto
+      
+   + .raio-body
+      margin-top: spacing(2)      
+      
+   // Menu
+   .raio-header-menu-toggle
+      float: right 
+      cursor: pointer
+      @media (min-width: $screen-phone-min)
+         display: none
+   
+   .raio-header-menu-checkbox
+      display: none
+      @media (max-width: $screen-phone-max)
+         &:not(:checked)
+            ~ .raio-header-menu
+               display: none
+         &:checked
+            ~ .raio-header-menu
+               display: initial         
+      
+   .raio-header-menu
+      float: left
+      clear: both      
+      .raio-header-menu-icon
+         margin-right: spacing(1)
+      .raio-header-menu-item
+         margin-bottom: spacing(1)
+         margin-top: spacing(1)
+         &:last-child
+            margin-bottom: 0
+      @media (min-width: $screen-phone-min)                  
+         float: right
+         clear: none
+         .raio-header-menu-item
+            display: inline
+            + .raio-header-menu-item
+               margin-left: spacing(2)
+   a
+      color: $color-blue
+      &:hover      
+         color: $color-orange     

@@ -1,0 +1,23 @@
+{
+  "name": "teles-github-io",
+  "version": "0.0.0",
+  "authors": [
+    "teles <josetelesmaciel@gmail.com>"
+  ],
+  "description": "Raio frontendizador",
+  "keywords": [
+    "sass",
+    "chocolate"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "compass-mixins": "~1.0.2"
+  }
+}

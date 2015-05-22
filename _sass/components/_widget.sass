@@ -1,0 +1,20 @@
+.raio-widgets-container   
+   @include m-clearfix
+        
+.raio-widgets   
+   background-color: white      
+   padding: spacing(2)      
+   &.raio-widgets-special
+      background-color: $color-blue
+      color: #fff            
+   + .raio-widgets
+      margin-top: spacing(2)   
+   .raio-widget
+      .raio-widget-title
+         font-weight: bold
+         margin-bottom: spacing(1)
+      + .raio-widget
+         margin-top: spacing(1)
+   img
+      display: block
+      margin: 0 auto

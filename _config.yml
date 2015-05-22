@@ -8,6 +8,6 @@ baseurl: ""
 url: "http://teles.github.io"
 twitter_username: raiofront
 github_username:  teles
-
+author_name: Jota Teles
 # Build settings
 markdown: kramdown

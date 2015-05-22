@@ -1,0 +1,10 @@
+// # Mixins
+//    ## Clearfix
+//    Aplica clearfix em um elemento, ou seja, limpa seus floats.
+@mixin m-clearfix 
+   &:before,
+   &:after 
+      content: " "
+      display: table
+   &:after 
+      clear: both

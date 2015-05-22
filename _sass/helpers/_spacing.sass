@@ -1,0 +1,14 @@
+// # Spacing utilities
+// Essas são algumas variáveis e classes utilizadas para padronização de espaçamentos.
+
+$spacing-prefix: s
+$spacings: 8px 16px 24px 32px 40px 48px
+$spacing-directions: top right bottom left
+
+@for $i from 1 through length($spacings)    
+   @each $spacing-direction in $spacing-directions 
+      .#{$spacing-prefix}-margin-#{$spacing-direction}-#{$i} 
+         margin-#{$spacing-direction}: nth($spacings, $i)
+      
+      .#{$spacing-prefix}-padding-#{$spacing-direction}-#{$i}
+         padding-#{$spacing-direction}: nth($spacings, $i)

@@ -1,0 +1,33 @@
+// Pagination
+.raio-pagination   
+   background-color: white
+   padding: spacing(2)
+   text-align: center
+   .raio-pagination-count
+      + .raio-pagination-list
+         margin-top: spacing(1)
+         @media (min-width: $screen-tablet-min)              
+            margin-top: 0
+   .raio-pagination-list
+      display: block
+      list-style: none
+      @media (min-width: $screen-tablet-min) 
+         display: inline
+      .raio-pagination-item
+         display: inline
+         color: $color-gray-dark
+         > a
+            padding: 0 spacing(1)/2
+            width: 100%
+            height: 100%
+         &:hover
+            color: $color-primary
+         &.raio-pagination-item-active
+            background-color: $color-primary
+            color: #fff
+            cursor: initial
+            &:hover
+               background-color: $color-alert
+               color: #fff
+         + .raio-pagination-item
+            margin-left: spacing(1)

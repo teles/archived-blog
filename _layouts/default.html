@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+  
   {% include head.html %}
-
+  
   <body>
+    <div class="raio-color-strips"></div>
 
     {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+    
+    <main class="raio-body">
+        {{ content }} 
+        <aside class="raio-widgets-container">
+          <section class="raio-widgets raio-widgets-special">
+            {% include widgets/author-information.html %}        
+          </section>
+          <section class="raio-widgets">
+            {% include widgets/tags.html %}        
+          </section>
+          <section class="raio-widgets">
+            {% include widgets/search.html %}        
+          </section>
+          <section class="raio-widgets">
+            {% include widgets/license.html %}        
+          </section>
+        </aside>
+    </main>
 
     {% include footer.html %}
 
   </body>
-
 </html>
