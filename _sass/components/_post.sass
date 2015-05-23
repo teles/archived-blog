@@ -22,15 +22,22 @@
    + .raio-post,
    + .raio-pagination
       margin-top: spacing(2)
+      color: #333
    .raio-post-title,
    .raio-post-title > a
       color: $color-blue      
       + .raio-post-content
          margin-top: spacing(1)
    .raio-post-content         
-      .raio-post-text
-         + .raio-post-text
-            margin-top: spacing(1)
+      a
+         color: $color-orange
+         &:hover
+            color: $color-yellow
+      img
+         max-width: 100%
+      p, ul, h1, h2, h3
+         margin-top: spacing(2)      
+         margin-bottom: spacing(2)     
    .raio-post-info
       margin-top: spacing(1)
       margin-bottom: spacing(1)
@@ -38,7 +45,3 @@
       text-transform: uppercase
    .raio-post-date
       margin-right: spacing(1)
-   a
-      color: $color-orange
-      &:hover
-         color: $color-yellow
