@@ -9,14 +9,16 @@ layout: default
                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
             <div class="raio-post-info">
-              <span class="raio-post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <span class="raio-post-date">{% include snippets/post-date.html %}</span>
               <!-- <span><strong>tags:</strong> <a href="">nada</a> , <a href="">inicial</a> </span> -->
             </div>
             <hr class="raio-separator raio-separator-primary">
             <div class="raio-post-content">
                 {{ post.excerpt }}
+                <a href="{{ post.url }}">continue lendo...</a>
                 </p>
             </div>
         </article>          
       {% endfor %}
+      <!-- {% include pagination.html %}         -->
     </section>
