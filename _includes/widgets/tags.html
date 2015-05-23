@@ -3,9 +3,10 @@
        Tags
     </h3>   
     <div>
-        <a class="raio-tag">svg</a>                 
-        <a class="raio-tag">sass</a>                 
-        <a class="raio-tag">angularjs</a>                                  
-        <a class="raio-tag">nada</a>                     
-    </div>                 
+
+{% for tag in site.tags %}
+    <span class="raio-tag"> {{tag}} </span>
+{% endfor %}
+
+    </div>
  </div>   
