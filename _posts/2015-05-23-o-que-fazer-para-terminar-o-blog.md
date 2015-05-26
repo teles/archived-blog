@@ -21,13 +21,9 @@ published: True
 ---
 * [01] Criar fonte padronizada com ícones do codepen, deviantart, raio, lupa, gihtub, openclipart, etc
 * [03] Linkar redes sociais
+* [22] Melhorar títulos das páginas para que incluam nome do blog dentro de posts
 
 [image01]:https://openclipart.org/download/77077/waiter.svg
-[image02]:https://openclipart.org/download/81337/interaction-designers.svg
-[image03]:https://openclipart.org/download/77065/interviewer.svg
-[image04]:https://openclipart.org/download/75385/designer-run.svg
-[image05]:https://openclipart.org/download/75451/runner.svg
-[image06]:https://openclipart.org/download/77059/clown.svg
 
 ![Garçom][image01]
 
@@ -62,7 +58,6 @@ published: True
 * [19] Incluir metadatas mais comuns
 * [20] Suporte ao opengraph, coisas simples como título e imagem principal
 * [21] Suporte à microformatos, ao menos vcard
-* [22] Melhorar títulos das páginas para que incluam nome do blog dentro de posts
 
 
 É isso, abraço!
