@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="512"
+   id="svg3000"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="base-glyph.svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1021"
+     id="namedview4"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="0.48760321"
+     inkscape:cx="-326.44079"
+     inkscape:cy="255.99999"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3000" />
+  <metadata
+     id="metadata3005">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="M 512,85.33902 C 512,40.4992 471.51787,4.9999994e-7 426.66666,4.9999994e-7 H 85.333298 C 40.482098,4.9999994e-7 -2.5e-6,40.4992 -2.5e-6,85.33902 V 426.66098 C -2.5e-6,471.5008 40.482098,512 85.338998,512 H 255.99999 V 318.57777 h -62.57778 v -85.33333 h 62.57778 v -33.24587 c 0,-57.33831 43.05351,-108.97635 96,-108.97635 h 68.97778 v 85.33333 h -68.97778 c -7.54915,0 -16.35555,9.1648 -16.35555,22.89209 v 33.9968 h 85.33333 v 85.33333 H 335.64444 V 512 h 91.02222 C 471.51786,512 512,471.5008 512,426.66098 V 85.33902 z"
+     id="Facebook__x28_alt_x29_"
+     inkscape:connector-curvature="0" />
+</svg>

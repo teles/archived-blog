@@ -12,6 +12,15 @@ published: True
 * Instalação do compass pelo bower
 * Internacionalização da data de posts e páginas
 
+---
+
+* [05] Link para rss tem que redirecionar para página de rss
+* [09] Colocar meu avatar ali do lado
+* [23] Colocar opção de "continue lendo"
+
+---
+
+
 [image01]:https://openclipart.org/download/77077/waiter.svg
 [image02]:https://openclipart.org/download/81337/interaction-designers.svg
 [image03]:https://openclipart.org/download/77065/interviewer.svg
@@ -24,21 +33,18 @@ published: True
 
 ### Falta fazer para MVP
 * [01] Criar fonte padronizada com ícones do codepen, deviantart, raio, lupa, gihtub, openclipart, etc
-* [02 ]Resolver bug do widget de tags
+* [02] Resolver bug do widget de tags
 * [03] Linkar redes sociais
 * [04] Criar página de sobre
-* [05] Link para rss tem que redirecionar para página de rss
 
 
 ### Mais pra frente
 * [06] Deixar o widget de busca funcional
 * [07] Deixar o widget de paginação funcional
 * [08] Criar página de laboratório
-* [09] Colocar meu avatar ali do lado
 * [10] Mudar topo do site para a busca aparecer lá, tipo updateordie
 * [11] Documentar o build do site
 * [12] Linkar widget da página do facebook
-* [23] Colocar opção de "continue lendo"
 
 
 ### Melhorias do sass

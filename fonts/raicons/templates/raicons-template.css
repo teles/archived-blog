@@ -1,0 +1,39 @@
+// ##Raicons
+
+$font-face-folder: '../fonts';
+
+@font-face {
+    font-family: "Raicons";
+    src: url("#{$font-face-folder}/raicons.eot"); /* IE9 Compat Modes */
+    src: url("#{$font-face-folder}/raicons.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("#{$font-face-folder}/raicons.woff") format("woff"), /* Modern Browsers */
+        url("#{$font-face-folder}/raicons.ttf")  format("truetype"), /* Safari, Android, iOS */
+        url("#{$font-face-folder}/raicons.svg#raicons") format("svg"); /* Legacy iOS */
+}
+
+
+$raicons-default-size: 18px;
+
+*[class^='raicon-'],
+*[class*=' raicon-'] {
+    font-weight: normal;
+    font-style: normal;
+    font-size: $raicons-default-size;
+    speak: none;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: inherit;
+	font-family: "Raicons";
+    display: inline-block;	
+}
+
+//   # Lista dos glifos/ícones por unicode
+<% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
+$<%= classPrefix %><%= glyphs[glyphIdx] %>: "\<%= codepoints[glyphIdx] %>";<% } %>
+
+// Classes 
+<% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
+.<%= classPrefix %><%= glyphs[glyphIdx] %>:before { content: $<%= classPrefix %><%= glyphs[glyphIdx] %>;}<% } %>
