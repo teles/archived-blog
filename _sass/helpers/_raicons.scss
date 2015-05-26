@@ -39,10 +39,12 @@ $raicon-github: "\f104";
 $raicon-linkedin: "\f105";
 $raicon-lupa-direita: "\f106";
 $raicon-lupa-esquerda: "\f107";
-$raicon-raio: "\f108";
-$raicon-rss: "\f109";
-$raicon-twitter: "\f10a";
-$raicon-usuario: "\f10b";
+$raicon-menu: "\f108";
+$raicon-menu51: "\f109";
+$raicon-raio: "\f10a";
+$raicon-rss: "\f10b";
+$raicon-twitter: "\f10c";
+$raicon-usuario: "\f10d";
 
 // Classes 
 
@@ -53,6 +55,8 @@ $raicon-usuario: "\f10b";
 .raicon-linkedin:before { content: $raicon-linkedin;}
 .raicon-lupa-direita:before { content: $raicon-lupa-direita;}
 .raicon-lupa-esquerda:before { content: $raicon-lupa-esquerda;}
+.raicon-menu:before { content: $raicon-menu;}
+.raicon-menu51:before { content: $raicon-menu51;}
 .raicon-raio:before { content: $raicon-raio;}
 .raicon-rss:before { content: $raicon-rss;}
 .raicon-twitter:before { content: $raicon-twitter;}

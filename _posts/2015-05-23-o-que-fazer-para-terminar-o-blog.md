@@ -19,7 +19,8 @@ published: True
 * [23] Colocar opção de "continue lendo"
 
 ---
-
+* [01] Criar fonte padronizada com ícones do codepen, deviantart, raio, lupa, gihtub, openclipart, etc
+* [03] Linkar redes sociais
 
 [image01]:https://openclipart.org/download/77077/waiter.svg
 [image02]:https://openclipart.org/download/81337/interaction-designers.svg
@@ -32,9 +33,7 @@ published: True
 
 
 ### Falta fazer para MVP
-* [01] Criar fonte padronizada com ícones do codepen, deviantart, raio, lupa, gihtub, openclipart, etc
 * [02] Resolver bug do widget de tags
-* [03] Linkar redes sociais
 * [04] Criar página de sobre
 
 
