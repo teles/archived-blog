@@ -33,18 +33,21 @@ $raicons-default-size: 18px;
 //   # Lista dos glifos/ícones por unicode
 
 $raicon-dribbble: "\f101";
-$raicon-facebook: "\f102";
-$raicon-github: "\f103";
-$raicon-linkedin: "\f104";
-$raicon-lupa-direita: "\f105";
-$raicon-lupa-esquerda: "\f106";
-$raicon-raio: "\f107";
-$raicon-rss: "\f108";
-$raicon-twitter: "\f109";
+$raicon-erlenmeyer: "\f102";
+$raicon-facebook: "\f103";
+$raicon-github: "\f104";
+$raicon-linkedin: "\f105";
+$raicon-lupa-direita: "\f106";
+$raicon-lupa-esquerda: "\f107";
+$raicon-raio: "\f108";
+$raicon-rss: "\f109";
+$raicon-twitter: "\f10a";
+$raicon-usuario: "\f10b";
 
 // Classes 
 
 .raicon-dribbble:before { content: $raicon-dribbble;}
+.raicon-erlenmeyer:before { content: $raicon-erlenmeyer;}
 .raicon-facebook:before { content: $raicon-facebook;}
 .raicon-github:before { content: $raicon-github;}
 .raicon-linkedin:before { content: $raicon-linkedin;}
@@ -53,3 +56,4 @@ $raicon-twitter: "\f109";
 .raicon-raio:before { content: $raicon-raio;}
 .raicon-rss:before { content: $raicon-rss;}
 .raicon-twitter:before { content: $raicon-twitter;}
+.raicon-usuario:before { content: $raicon-usuario;}
