@@ -23,6 +23,10 @@ published: True
 * [03] Linkar redes sociais
 * [22] Melhorar títulos das páginas para que incluam nome do blog dentro de posts
 
+---
+
+* [04] Criar página de sobre
+
 [image01]:https://openclipart.org/download/77077/waiter.svg
 
 ![Garçom][image01]
@@ -30,7 +34,6 @@ published: True
 
 ### Falta fazer para MVP
 * [02] Resolver bug do widget de tags
-* [04] Criar página de sobre
 
 
 ### Mais pra frente
