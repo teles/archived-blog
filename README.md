@@ -23,6 +23,7 @@ Raio front-endizador! Blog de desenvolvimento front-end
 ---
 
 * [04] Criar página de sobre
+* [18] Incluir favicon
 
 [image01]:https://openclipart.org/download/77077/waiter.svg
 
@@ -54,7 +55,6 @@ Raio front-endizador! Blog de desenvolvimento front-end
 
 
 ## SEO e metadata
-* [18] Incluir favicon
 * [19] Incluir metadatas mais comuns
 * [20] Suporte ao opengraph, coisas simples como título e imagem principal
 * [21] Suporte à microformatos, ao menos vcard
