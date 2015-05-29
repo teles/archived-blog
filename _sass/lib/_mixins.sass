@@ -8,3 +8,18 @@
       display: table
    &:after 
       clear: both
+
+//	## Background stripes
+//  Aplica background linear com faixas coloridas
+//
+@mixin background-stripes($stripes-direction, $stripes-colors...)
+   $stripes-list: ()
+   @for $i from 1 through length($stripes-colors)
+      $stripe-number-prev: #{100% / length($stripes-colors) * ($i - 1)}
+      $stripe-number: #{100% / length($stripes-colors) * $i}
+      $stripe-color: nth($stripes-colors, $i)
+      $stripe-declaration-prev: $stripe-color $stripe-number-prev
+      $stripe-declaration: $stripe-color $stripe-number
+      $stripes-list: append($stripes-list, $stripe-declaration-prev, comma)
+      $stripes-list: append($stripes-list, $stripe-declaration, comma)
+   background-image: linear-gradient($stripes-direction, $stripes-list)
