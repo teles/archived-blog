@@ -29,11 +29,6 @@ Raio front-endizador! Blog de desenvolvimento front-end
 
 * [12] Linkar widget da página do facebook
 
-[image01]:https://openclipart.org/download/77077/waiter.svg
-
-![Garçom][image01]
-
-
 ### Falta fazer para MVP
 * [02] Resolver bug do widget de tags
 

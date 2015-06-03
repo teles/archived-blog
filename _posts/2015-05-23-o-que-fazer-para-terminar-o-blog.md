@@ -28,13 +28,9 @@ published: True
 * [04] Criar página de sobre
 * [18] Incluir favicon
 
-[image01]:https://openclipart.org/download/77077/waiter.svg
-
 ---
 
 * [12] Linkar widget da página do facebook
-
-![Garçom][image01]
 
 
 ### Falta fazer para MVP
