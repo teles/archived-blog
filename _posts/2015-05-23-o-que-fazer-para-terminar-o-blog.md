@@ -30,6 +30,10 @@ published: True
 
 [image01]:https://openclipart.org/download/77077/waiter.svg
 
+---
+
+* [12] Linkar widget da página do facebook
+
 ![Garçom][image01]
 
 
@@ -43,7 +47,6 @@ published: True
 * [08] Criar página de laboratório
 * [10] Mudar topo do site para a busca aparecer lá, tipo updateordie
 * [11] Documentar o build do site
-* [12] Linkar widget da página do facebook
 
 
 ### Melhorias do sass

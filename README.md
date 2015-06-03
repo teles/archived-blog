@@ -25,6 +25,10 @@ Raio front-endizador! Blog de desenvolvimento front-end
 * [04] Criar página de sobre
 * [18] Incluir favicon
 
+---
+
+* [12] Linkar widget da página do facebook
+
 [image01]:https://openclipart.org/download/77077/waiter.svg
 
 ![Garçom][image01]
@@ -40,7 +44,6 @@ Raio front-endizador! Blog de desenvolvimento front-end
 * [08] Criar página de laboratório
 * [10] Mudar topo do site para a busca aparecer lá, tipo updateordie
 * [11] Documentar o build do site
-* [12] Linkar widget da página do facebook
 
 
 ### Melhorias do sass
