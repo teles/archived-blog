@@ -31,7 +31,7 @@ published: True
 ---
 
 * [12] Linkar widget da página do facebook
-
+* [15] Aproveitar melhor os espaços laterais em telas grandes
 
 ### Falta fazer para MVP
 * [02] Resolver bug do widget de tags
@@ -48,7 +48,6 @@ published: True
 ### Melhorias do sass
 * [13] Melhorar sistema de ícones com cores, tamanho e glifos
 * [14] Melhoria da tipografia para não ter que usar h3 dentro de post onde deveria ser h2
-* [15] Aproveitar melhor os espaços laterais em telas grandes
 * [16] Documentação automática dentro do próprio blog com styledocco
 
 
