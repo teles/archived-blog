@@ -1,5 +1,5 @@
 .raio-separator
-   border-width: 1px 0 0 0
+   border-width: 2px 0 0 0
    border-style: solid 
    border-top-color: $color-gray
    margin: spacing(1) 0
@@ -10,4 +10,8 @@
    &.raio-separator-success
       border-top-color: $color-success
    &.raio-separator-alert
-      border-top-color: $color-alert                  
+      border-top-color: $color-alert          
+   &.raio-separator-colorful
+      border: 0
+      height: 2px               
+      @include background-stripes(to right, $color-purple, $color-blue, $color-green, $color-yellow, $color-orange)

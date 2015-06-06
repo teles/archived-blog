@@ -5,9 +5,10 @@ description: >
   Raio frontendizador! Blog sobre desenvolvimento front end.
   HTML, CSS, Javascript, por Jota Teles.
 baseurl: ""
-url: "http://teles.github.io"
+url: "http://www.jotateles.com.br"
 twitter_username: raiofront
 github_username:  teles
 author_name: Jota Teles
+facebook_username: jota.teles
 # Build settings
 markdown: kramdown
