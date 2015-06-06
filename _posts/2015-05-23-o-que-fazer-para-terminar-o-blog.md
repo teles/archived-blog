@@ -11,27 +11,18 @@ published: True
 * Estrutura de html com widgets e snippets bem separados
 * Instalação do compass pelo bower
 * Internacionalização da data de posts e páginas
-
----
-
 * [05] Link para rss tem que redirecionar para página de rss
 * [09] Colocar meu avatar ali do lado
 * [23] Colocar opção de "continue lendo"
-
----
 * [01] Criar fonte padronizada com ícones do codepen, deviantart, raio, lupa, gihtub, openclipart, etc
 * [03] Linkar redes sociais
 * [22] Melhorar títulos das páginas para que incluam nome do blog dentro de posts
-
----
-
 * [04] Criar página de sobre
 * [18] Incluir favicon
-
----
-
 * [12] Linkar widget da página do facebook
 * [15] Aproveitar melhor os espaços laterais em telas grandes
+
+---
 
 ### Falta fazer para MVP
 * [02] Resolver bug do widget de tags
