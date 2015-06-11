@@ -7,6 +7,12 @@ layout: default
               <!-- <span><strong>tags:</strong> <a href="">nada</a> , <a href="">inicial</a> </span> -->
               <span class="raio-post-date">
                     {% include snippets/page-date.html %}   
+              </span>                            
+              <span class="raio-post-comments-count">
+                  <i class="raicon-balao raio-post-comments-count-icon"></i>
+                  <a href="{{site.url}}{{ page.url }}#disqus_thread" data-disqus-url="{{site.url}}{{ page.url }}">
+                    Comentários
+                  </a>                                              
               </span>
             </div>
             <h2 class="raio-post-title">{{ page.title }}</h2>            

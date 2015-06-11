@@ -8,6 +8,12 @@ layout: default
             <div class="raio-post-info">
               <span class="raio-post-date">{% include snippets/post-date.html %}</span>
               <!-- <span><strong>tags:</strong> <a href="">nada</a> , <a href="">inicial</a> </span> -->
+              <span class="raio-post-comments-count">
+                  <i class="raicon-balao raio-post-comments-count-icon"></i>
+                  <a href="{{site.url}}{{ post.url }}#disqus_thread" data-disqus-url="{{site.url}}{{ post.url }}">
+                    Comentários
+                  </a>                                              
+              </span>            
             </div>
             <h2 class="raio-post-title">
                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
