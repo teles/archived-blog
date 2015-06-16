@@ -1,0 +1,40 @@
+$source-sans-pro-folder: '../fonts/source-sans-pro';
+
+// Regular
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('#{$source-sans-pro-folder}/sourcesanspro-regular-webfont.eot');
+    src: url('#{$source-sans-pro-folder}/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$source-sans-pro-folder}/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('#{$source-sans-pro-folder}/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('#{$source-sans-pro-folder}/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('#{$source-sans-pro-folder}/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Semibold 
+@font-face {
+    font-family: 'source_sans_prosemibold';
+    src: url('#{$source-sans-pro-folder}/sourcesanspro-semibold-webfont.eot');
+    src: url('#{$source-sans-pro-folder}/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$source-sans-pro-folder}/sourcesanspro-semibold-webfont.woff2') format('woff2'),
+         url('#{$source-sans-pro-folder}/sourcesanspro-semibold-webfont.woff') format('woff'),
+         url('#{$source-sans-pro-folder}/sourcesanspro-semibold-webfont.ttf') format('truetype'),
+         url('#{$source-sans-pro-folder}/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;    
+}
+
+// Bold
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('#{$source-sans-pro-folder}/sourcesanspro-bold-webfont.eot');
+    src: url('#{$source-sans-pro-folder}/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$source-sans-pro-folder}/sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('#{$source-sans-pro-folder}/sourcesanspro-bold-webfont.woff') format('woff'),
+         url('#{$source-sans-pro-folder}/sourcesanspro-bold-webfont.ttf') format('truetype'),
+         url('#{$source-sans-pro-folder}/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
