@@ -26,7 +26,29 @@ module.exports = function(grunt) {
           }
         }
       }
-    }//,
+    },
+
+    pagespeed: {
+      options: {
+        nokey: true
+      },
+      desktop: {
+        options: {
+          url: "https://www.jotateles.com.br",
+          locale: "en_GB",
+          strategy: "desktop",
+          threshold: 80
+        }
+      },
+      mobile: {
+        options: {
+          url: "https://www.jotateles.com.br",
+          locale: "en_GB",
+          strategy: "mobile",
+          threshold: 80
+        }
+      }      
+    }
 
     // watch: {
     //   // sass: {
@@ -47,6 +69,7 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-contrib-watch');
   // grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-webfont');
+  grunt.loadNpmTasks('grunt-pagespeed');
   // grunt.loadNpmTasks('grunt-contrib-sass');
  
   // tarefas
