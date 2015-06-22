@@ -31,16 +31,20 @@
       @media (min-width: $screen-phone-min)
          display: none
    
-   .raio-header-menu-checkbox
-      display: none
-      @media (max-width: $screen-phone-max)
-         &:not(:checked)
-            ~ .raio-header-menu
-               display: none
+   .raio-header-menu-checkbox     
+      display: none 
+      &:not(:checked)
+         ~ .raio-header-menu
+            display: none
+      &:checked
+         ~ .raio-header-menu
+            display: initial   
+      @media (min-width: $screen-phone-min)                     
+         &:not(:checked),
          &:checked
             ~ .raio-header-menu
-               display: initial         
-      
+               display: initial
+
    .raio-header-menu
       float: left
       clear: both      
