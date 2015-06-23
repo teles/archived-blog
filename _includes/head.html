@@ -15,6 +15,12 @@
   <link rel="icon" type="image/x-icon" href="{{ "/images/favicon.png" | prepend: site.baseurl }}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  
+  <!-- Highlightjs -->
+  <link rel="stylesheet" href="/bower_components/highlightjs/styles/monokai_sublime.css">
+  <script src="/bower_components/highlightjs/highlight.pack.js" type="text/javascript"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
