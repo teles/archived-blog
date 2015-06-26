@@ -1,5 +1,5 @@
 {
-  "name": "raicons",
+  "name": "jotateles.com.br",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
@@ -8,11 +8,12 @@
     "grunt-webfont": "~0.5.2"
   },
   "devDependencies": {
-    "grunt-webfont": "~0.5.2",
-    "grunt-contrib-sass": "~0.9.2",
     "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-sass": "~0.9.2",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-pagespeed": "~1.0.0"
+    "grunt-pagespeed": "~1.0.0",
+    "grunt-scss-lint": "^0.3.6",
+    "grunt-webfont": "~0.5.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
