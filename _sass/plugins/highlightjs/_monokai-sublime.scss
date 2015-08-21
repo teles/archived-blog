@@ -1,0 +1,325 @@
+//colors
+$color_log_cabin_approx: #23241f;
+$color_spring_wood_approx: #f8f8f2;
+$color_cloudy_approx: #a8a8a2;
+$color_dull_lavender_approx: #ae81ff;
+$color_atlantis_approx: #a6e22e;
+$color_radical_red_approx: #f92672;
+$color_turquoise_blue_approx: #66d9ef;
+$color_golden_sand_approx: #e6db74;
+$color_pablo_approx: #75715e;
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	padding: 0.5em;
+	background: $color_log_cabin_approx;
+	color: $color_spring_wood_approx;
+}
+.hljs-tag {
+	color: $color_spring_wood_approx;
+	.hljs-value {
+		color: $color_atlantis_approx;
+	}
+	.hljs-title {
+		color: $color_radical_red_approx;
+	}
+}
+.css {
+	.hljs-rule {
+		color: $color_spring_wood_approx;
+	}
+	.hljs-value {
+		color: $color_spring_wood_approx;
+	}
+	.hljs-class {
+		color: $color_atlantis_approx;
+	}
+	.hljs-tag {
+		color: $color_radical_red_approx;
+	}
+	.unit {
+		color: $color_radical_red_approx;
+	}
+	.hljs-important {
+		color: $color_radical_red_approx;
+	}
+	.hljs-attribute {
+		color: $color_turquoise_blue_approx;
+	}
+	.hljs-id {
+		color: $color_golden_sand_approx;
+	}
+	.hljs-function .hljs-preprocessor {
+		color: $color_spring_wood_approx;
+	}
+}
+.hljs-pragma {
+	color: $color_spring_wood_approx;
+}
+.hljs-strongemphasis {
+	color: $color_cloudy_approx;
+	font-weight: bold;
+	font-style: italic;
+}
+.hljs-strong {
+	color: $color_cloudy_approx;
+	font-weight: bold;
+}
+.hljs-emphasis {
+	color: $color_cloudy_approx;
+	font-style: italic;
+}
+.hljs-bullet {
+	color: $color_dull_lavender_approx;
+}
+.hljs-blockquote {
+	color: $color_dull_lavender_approx;
+}
+.hljs-horizontal_rule {
+	color: $color_dull_lavender_approx;
+}
+.hljs-number {
+	color: $color_dull_lavender_approx;
+}
+.hljs-regexp {
+	color: $color_dull_lavender_approx;
+}
+.hljs-literal {
+	color: $color_dull_lavender_approx;
+}
+.hljs-hexcolor {
+	color: $color_dull_lavender_approx;
+}
+.hljs-code {
+	color: $color_atlantis_approx;
+}
+.hljs-title {
+	color: $color_atlantis_approx;
+}
+.hljs-class {
+	.hljs-title {
+		color: $color_spring_wood_approx;
+		&:last-child {
+			color: $color_atlantis_approx;
+			font-style: italic;
+		}
+	}
+	.hljs-keyword:first-child {
+		color: $color_turquoise_blue_approx;
+	}
+}
+.hljs-link_url {
+	font-size: 80%;
+	color: $color_golden_sand_approx;
+}
+.hljs-typename {
+	font-style: italic;
+	color: $color_turquoise_blue_approx;
+}
+.hljs-keyword {
+	color: $color_radical_red_approx;
+}
+.ruby {
+	.hljs-class {
+		.hljs-parent {
+			color: $color_golden_sand_approx;
+		}
+		.hljs-keyword:first-child {
+			color: $color_radical_red_approx;
+		}
+	}
+	.hljs-function .hljs-keyword {
+		color: $color_radical_red_approx;
+	}
+}
+.hljs-function {
+	color: $color_radical_red_approx;
+	.hljs-keyword {
+		color: $color_turquoise_blue_approx;
+	}
+}
+.hljs-change {
+	color: $color_radical_red_approx;
+}
+.hljs-winutils {
+	color: $color_radical_red_approx;
+}
+.hljs-flow {
+	color: $color_radical_red_approx;
+}
+.tex {
+	.hljs-special {
+		color: $color_radical_red_approx;
+	}
+	.hljs-command {
+		color: $color_golden_sand_approx;
+	}
+	.hljs-formula {
+		color: $color_pablo_approx;
+		opacity: 0.5;
+	}
+}
+.hljs-header {
+	color: $color_radical_red_approx;
+}
+.hljs-attribute {
+	color: $color_radical_red_approx;
+}
+.hljs-symbol {
+	color: $color_radical_red_approx;
+	.hljs-string {
+		color: $color_radical_red_approx;
+	}
+}
+.hljs-value {
+	color: $color_radical_red_approx;
+}
+.hljs-aspect {
+	.hljs-title {
+		color: $color_spring_wood_approx;
+	}
+	.hljs-keyword:first-child {
+		color: $color_turquoise_blue_approx;
+	}
+}
+.hljs-constant {
+	color: $color_turquoise_blue_approx;
+}
+.hljs-name {
+	color: $color_turquoise_blue_approx;
+}
+.hljs-variable {
+	color: $color_spring_wood_approx;
+}
+.hljs-params {
+	color: $color_spring_wood_approx;
+}
+.hljs-string {
+	color: $color_golden_sand_approx;
+}
+.hljs-subst {
+	color: $color_golden_sand_approx;
+}
+.hljs-type {
+	color: $color_golden_sand_approx;
+}
+.hljs-built_in {
+	color: $color_golden_sand_approx;
+}
+.django {
+	.hljs-template_tag {
+		color: $color_golden_sand_approx;
+	}
+	.hljs-variable {
+		color: $color_golden_sand_approx;
+	}
+	.hljs-filter .hljs-argument {
+		color: $color_golden_sand_approx;
+	}
+}
+.smalltalk {
+	.hljs-class {
+		color: $color_golden_sand_approx;
+	}
+	.hljs-localvars {
+		color: $color_golden_sand_approx;
+	}
+	.hljs-array {
+		color: $color_golden_sand_approx;
+	}
+}
+.hljs-attr_selector {
+	color: $color_golden_sand_approx;
+}
+.hljs-pseudo {
+	color: $color_golden_sand_approx;
+}
+.hljs-addition {
+	color: $color_golden_sand_approx;
+}
+.hljs-stream {
+	color: $color_golden_sand_approx;
+}
+.hljs-envvar {
+	color: $color_golden_sand_approx;
+}
+.apache {
+	.hljs-tag {
+		color: $color_golden_sand_approx;
+	}
+	.hljs-cbracket {
+		color: $color_golden_sand_approx;
+	}
+	.hljs-sqbracket {
+		color: $color_pablo_approx;
+	}
+}
+.hljs-prompt {
+	color: $color_golden_sand_approx;
+}
+.hljs-link_label {
+	color: $color_golden_sand_approx;
+}
+.hljs-comment {
+	color: $color_pablo_approx;
+}
+.hljs-javadoc {
+	color: $color_pablo_approx;
+}
+.hljs-annotation {
+	color: $color_pablo_approx;
+}
+.hljs-decorator {
+	color: $color_pablo_approx;
+}
+.hljs-pi {
+	color: $color_pablo_approx;
+}
+.hljs-doctype {
+	color: $color_pablo_approx;
+}
+.hljs-deletion {
+	color: $color_pablo_approx;
+}
+.hljs-shebang {
+	color: $color_pablo_approx;
+}
+.xml {
+	.javascript {
+		opacity: 0.5;
+	}
+	.vbscript {
+		opacity: 0.5;
+	}
+	.css {
+		opacity: 0.5;
+	}
+	.hljs-cdata {
+		opacity: 0.5;
+	}
+	.php {
+		opacity: 0.5;
+	}
+}
+.aspectj .hljs-function {
+	color: $color_spring_wood_approx;
+}
+.alias .hljs-keyword {
+	color: $color_dull_lavender_approx;
+	&:first-child {
+		color: $color_radical_red_approx;
+	}
+}
+.nginx .hljs-title {
+	color: $color_radical_red_approx;
+}
+.coffeescript .javascript {
+	opacity: 0.5;
+}
+.javascript .xml {
+	opacity: 0.5;
+}
+.php .xml {
+	opacity: 0.5;
+}
