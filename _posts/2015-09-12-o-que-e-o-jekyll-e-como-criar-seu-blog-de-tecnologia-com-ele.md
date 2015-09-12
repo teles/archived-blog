@@ -23,7 +23,7 @@ Neste artigo vou mostrar o que é o Jekyll e porque eu o escolhi para [meu blog 
 
 ![É assim que um post do meu blog se parece no modo edição.](/images/posts/jekyll/meu-ambiente-de-trabalho-com-jekyll-e-sublime.png)
 
-Quando você instala o jekyll o que ele faz é fornecer um projeto inicial com uma estrutura de pastas padrão e quando você altera os arquivos desse projeto inicial, incluindo posts ou editando o estilo do blog, o jekyll se encarrega de transformar tudo isso em uma pasta chamada "site" que será o se blog.
+Quando você instala o jekyll o que ele faz é fornecer um projeto inicial com uma estrutura de pastas padrão e quando você altera os arquivos desse projeto inicial, incluindo posts ou editando o estilo do blog, o jekyll se encarrega de transformar tudo isso em uma pasta chamada **"_site"** que será o seu blog.
 
 ## Integração com seu Github
 
@@ -35,8 +35,8 @@ Isso significa que tudo que você precisa fazer para ter seu blog rodando no git
 
 * No seu github criar um repositório chamado **SEUNOMEDEUSUARIODOGITHUB**.github.io;
 * [Instalar o jekyll](https://jekyllrb.com/docs/installation/);
-* Dentro da pasta do seu projeto rodar `jekkyl serve`;
-* Criar posts e fazer commits na master do projeto;
+* Dentro da pasta do seu projeto rodar `jekyll serve`;
+* Criar posts e fazer commits na branch master do projeto; -**não precisa ser na branch gh-pages**
 * Entrar em http://**SEUNOMEDEUSUARIODOGITHUB**.github.io e pronto, seu blog estará online.
 
 ## Escreva seus posts com markdown
