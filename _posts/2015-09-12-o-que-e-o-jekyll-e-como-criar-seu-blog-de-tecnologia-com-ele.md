@@ -27,7 +27,7 @@ Quando você instala o jekyll o que ele faz é fornecer um projeto inicial com u
 
 ## Integração com seu Github
 
-Ou seja, você vai ligar apenas com arquivos estáticos, não precisa de backend.
+Ou seja, você vai lidar apenas com arquivos estáticos, não precisa de backend.
 
 Outra coisa legal é que o jekyll é integrado com o [Github](https://www.github.com).
 
