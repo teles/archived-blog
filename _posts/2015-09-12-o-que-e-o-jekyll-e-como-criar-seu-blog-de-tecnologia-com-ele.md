@@ -33,11 +33,11 @@ Outra coisa legal é que o jekyll é integrado com o [Github](https://www.github
 
 Isso significa que tudo que você precisa fazer para ter seu blog rodando no github é: 
 
-* No seu github criar um repositório chamado **SEUNOMEDEUSUARIODOGITHUB**.github.io;
+* No seu github criar um repositório chamado **seu-nome-de-usuario-github**.github.io;
 * [Instalar o jekyll](https://jekyllrb.com/docs/installation/);
 * Dentro da pasta do seu projeto rodar `jekyll serve`;
 * Criar posts e fazer commits na branch master do projeto; -**não precisa ser na branch gh-pages**
-* Entrar em http://**SEUNOMEDEUSUARIODOGITHUB**.github.io e pronto, seu blog estará online.
+* Entrar em http://**seu-nome-de-usuario-github**.github.io e pronto, seu blog estará online.
 
 ## Escreva seus posts com markdown
 ![Pacote do sublime para jekyll](/images/posts/jekyll/jekyll-sublime-package.png)
