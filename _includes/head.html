@@ -7,9 +7,10 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:title" content="{{ site.description }}"/>    
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>    
-  <meta property="og:image" content="http://orig10.deviantart.net/e41e/f/2013/212/6/5/jota_teles_by_devianteles-d6g3y4r.png"/>
+  <meta property="og:image" content="{{page.image | prepend: site.url }}"/>
   <meta property="article:author" content="http://facebook.com/{{site.facebook_username}}">
   <meta property="og:url" content="{{site.url}}">  
+  <meta property="og:site_name" content="{{site.title}}">  
 
   <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <link rel="icon" type="image/x-icon" href="{{ "/images/favicon.png" | prepend: site.baseurl }}">

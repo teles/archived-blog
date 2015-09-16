@@ -3,6 +3,7 @@ layout: post
 title: Usando o surge.sh para hospedar projetos de front end gratuitamente.
 categories: [dica]
 published: True
+image: "/images/posts/surge/surge-capa.png"
 ---
 ![surge.sh pode ser útil para pequenos projetos de front](/images/posts/surge/surge-capa.png)
 

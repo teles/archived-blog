@@ -4,6 +4,7 @@ title: O que é o Jekyll e como criar seu blog de tecnologia com ele.
 categories: [jekyll]
 tags: [jekyll, blog, github, github pages]
 published: True
+image: "/images/posts/jekyll/jekyll-o-que-e.png"
 
 ---
 
