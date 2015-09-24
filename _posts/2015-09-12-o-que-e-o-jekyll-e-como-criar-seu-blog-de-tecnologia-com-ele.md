@@ -8,8 +8,6 @@ image: "/images/posts/jekyll/jekyll-o-que-e.png"
 
 ---
 
-![o que é o Jekyll? Ferramenta para edição de blogs estáticos.](/images/posts/jekyll/jekyll-o-que-e.png)
-
 Então você gostaria de ter um blog pessoal mas desiste da ideia quando pensa que vai ter que contratar um servidor só para isso? 
 
 Pois bem, seus problemas acabaram!

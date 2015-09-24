@@ -5,7 +5,6 @@ categories: [dica]
 published: True
 image: "/images/posts/surge/surge-capa.png"
 ---
-![surge.sh pode ser útil para pequenos projetos de front](/images/posts/surge/surge-capa.png)
 
 Galera, recentemente estava com um problema para subir arquivos estáticos para a internet gratuitamente e encontrei uma ferramenta excelente para essa finalidade.
 
