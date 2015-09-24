@@ -2,7 +2,7 @@
 layout: post
 title: O que fazer para terminar o blog?
 categories: []
-published: True
+published: False
 
 ---
 
