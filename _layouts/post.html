@@ -2,7 +2,7 @@
 layout: default
 ---
     <section class="raio-posts-container">
-        <article class="raio-post">
+        <article class="raio-post" itemscope itemtype="http://schema.org/BlogPosting">
             <div class="raio-post-info">
               <!-- <span><strong>tags:</strong> <a href="">nada</a> , <a href="">inicial</a> </span> -->
               <span class="raio-post-date">
@@ -15,9 +15,12 @@ layout: default
                   </a>                                              
               </span>
             </div>
-            <h2 class="raio-post-title">{{ page.title }}</h2>            
+            <h2 class="raio-post-title" itemprop="headline">{{ page.title }}</h2>            
             <!-- <hr class="raio-separator raio-separator-primary"> -->
-            <div class="raio-post-content">
+            <div class="raio-post-content" itemprop="articleBody">
+                <meta itemprop="url" content="{{page.url | prepend: site.url }}" />
+                <meta itemprop="keywords" content="{% for tag in page.tags %}{{tag}}, {% endfor %}"/>            
+                <img src="{{page.image}}" alt='Imagem de exibição para "{{page.title}}"' title="{{page.title}}" itemprop="image">                
                 {{ content }}
                 </p>
             </div>
