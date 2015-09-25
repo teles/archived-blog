@@ -1,0 +1,2 @@
+Sitemap: http://jotateles.com.br/sitemap.xml
+User-agent: *
