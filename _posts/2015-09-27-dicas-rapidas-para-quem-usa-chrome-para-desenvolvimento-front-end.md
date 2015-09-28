@@ -1,16 +1,15 @@
 ---
 layout: post
-title: 10 dicas rápidas para quem usa chrome (ou chromium) no desenvolvimento *front end*.
+title: 10 dicas rápidas para quem usa chrome (ou chromium) no desenvolvimento front end.
 categories: [dica]
 published: True
 image: "https://sc-cdn.scaleengine.net/i/ffdac48fc3a225b884128da32b2db6ae.png"
 tags: devtools, css, xpath, chrome, chromium, rgb, hsl, curl, :hover, :active
 ---
 
-Olá, frontaiada!
+Olá, frontaiada! Venho com uma lista de 10 dicas para quem usa o chrome (ou chromium) para desenvolvimento front end.
 
-Sabendo que o devtools é bastante usando hoje para desenvolvimento web, separei 10 dicas que uso no meu dia a dia quando estou desenvolvendo com chr
-ome ou chromium. Lá vão elas:
+Todas essas dicas fazem parte do meu processo de desenvolvimento. Vamos lá:
 
 1. [Use o "console.table()" para logar objetos javascript em formato de tabela](#use-o-consoletable-para-logar-objetos-javascript-em-formato-de-tabela)
 2. [Buscar por seletores css ou xpath na aba ‘Elements’](#buscar-por-seletores-css-ou-xpath-na-aba-elements)
