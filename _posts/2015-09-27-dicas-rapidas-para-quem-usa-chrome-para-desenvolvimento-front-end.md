@@ -127,6 +127,6 @@ Que pode ser usado direto no console do seu sistema operacional para fazer uma c
 
 Bem, utilizo várias dessas dicas no meu dia a dia a algum tempo, algumas a mais de ano, outras mais recentemente descobrí em alguns sites, como esses que cito abaixo:
 
-[Google Developes Web Updates Tips](https://developers.google.com/web/updates/tip)
-[Devtools tips for sublime text users](https://medium.com/google-developers/devtools-tips-for-sublime-text-users-cdd559ee80f8)
-[DevTools Tips](http://devtoolstips.com/)
+* [Google Developes Web Updates Tips](https://developers.google.com/web/updates/tip)
+* [Devtools tips for sublime text users](https://medium.com/google-developers/devtools-tips-for-sublime-text-users-cdd559ee80f8)
+* [DevTools Tips](http://devtoolstips.com/)
