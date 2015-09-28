@@ -1,15 +1,28 @@
 ---
 layout: post
-title: 10 dicas rápidas para quem usa chrome no desenvolvimento front end.
+title: 10 dicas rápidas para quem usa chrome (ou chromium) no desenvolvimento *front end*.
 categories: [dica]
 published: True
 image: "https://sc-cdn.scaleengine.net/i/ffdac48fc3a225b884128da32b2db6ae.png"
+tags: devtools, css, xpath, chrome, chromium, rgb, hsl, curl, :hover, :active
 ---
 
 Olá, frontaiada!
 
-Sabendo que o devtools é bastante usando hoje para desenvolvimento web, separei 11 dicas que uso no meu dia a dia quando estou desenvolvendo com chr
+Sabendo que o devtools é bastante usando hoje para desenvolvimento web, separei 10 dicas que uso no meu dia a dia quando estou desenvolvendo com chr
 ome ou chromium. Lá vão elas:
+
+1. [Use o "console.table()" para logar objetos javascript em formato de tabela](#use-o-consoletable-para-logar-objetos-javascript-em-formato-de-tabela)
+2. [Buscar por seletores css ou xpath na aba ‘Elements’](#buscar-por-seletores-css-ou-xpath-na-aba-elements)
+3. [Logue por seletores xpath direto na aba ‘Console’ usando a função $x()](#logue-por-seletores-xpath-direto-na-aba-console-usando-a-funo-x) 
+4. [Exiba as chamadas ajax no ‘Console’ em tempo real](#exiba-as-chamadas-ajax-no-console-em-tempo-real)
+5. [Descubra vários formatos de uma cor na aba Elements](#descubra-vrios-formatos-de-uma-cor-na-aba-elements)
+6. [Para quem gosta do Sublime. Atalho CTRL +P ‘Go to anything’](#para-quem-gosta-do-sublime-atalho-ctrl-p-go-to-anything)
+7. [Outra para ‘sublimeiros’. Cursores múltiplos na aba ‘Sources’](#outra-para-sublimeiros-cursores-mltiplos-na-aba-sources)
+8. [Simule pseudo-classes css na aba ‘Elements’.](#simule-pseudo-classes-css-na-aba-elements)
+9. [Expandir seletores css declarados como *short hand*](#expandir-seletores-css-declarados-como-short-hand)
+10. [ *'Copy as cURL'* dentro da aba ‘Networks’.](#copy-as-curl-dentro-da-aba-networks)
+11. [Quer mais dicas, né? Veja as fontes aqui](#quer-mais-dicas-n-veja-as-fontes-aqui)
 
 ## 1 . Use o `console.table()` para logar objetos javascript em formato de tabela.
 
@@ -19,19 +32,18 @@ Fazer isso é fácil! Use o comando `console.table()` passando seu vetor como ar
 
 ### Exemplo `console.table(sites)` :
 
-```
-function Site(nome, url){
-    this.nome = nome;
-    this.url = url;  
-}
-var sites = [];
-var siteDoTeles = new Site('Raio Frontendizador','http://jotateles.com.br');
-var github = new Site('Github','https://www;github.com');
-var siteDoWillian = new Site('Willian Ribeiro','http://willianribeiro.com.br');
-sites.push(siteDoTeles, github, siteDoWillian);
 
-console.table(sites);
-```
+    function Site(nome, url){
+        this.nome = nome;
+        this.url = url;  
+    }
+    var sites = [];
+    var siteDoTeles = new Site('Raio Frontendizador','http://jotateles.com.br');
+    var github = new Site('Github','https://www;github.com');
+    var siteDoWillian = new Site('Willian Ribeiro','http://willianribeiro.com.br');
+    sites.push(siteDoTeles, github, siteDoWillian);
+
+    console.table(sites);
 
 ![Exemplo](https://sc-cdn.scaleengine.net/i/ffdac48fc3a225b884128da32b2db6ae.png)
 
@@ -39,23 +51,23 @@ console.table(sites);
 
 Normalmente procuramos na aba 'Elements' por strings visíveis na tela ou nome de elementos html, mas o que nem todo mundo sabe é que dá para buscar por seletores css e xpath também!
 
-## Exemplo buscando por seletor css:
+### Exemplo buscando por seletor css:
 Encontre os links desse post procurando pelo seletor css `.raio-body .raio-post a`.
 
 ![Exemplo](https://sc-cdn.scaleengine.net/i/bcc20c42449d451e39a724b9447cb150.png)
 
-## Encontre buscando por seletor xpath:
+### Encontre buscando por seletor xpath:
 
 Encontre as datas dos posts do blog buscando por `//div[@class='raio-post-info']//span[@class='raio-post-date']/text()`:
 
 ![Exemplo](https://sc-cdn.scaleengine.net/i/2e150a77b0d54fed794c29b14f86442f.png)
 
-## 3. Logue por seletores xpath direto na aba 'Console' usando a função $x():
+## 3. Logue por seletores xpath direto na aba 'Console' usando a função `$x()`:
 
-Uma boa alternativa para logar elementos do DOM no console é utilizar a função $x();
-A função $x(), recebe dois parametros, o primeiro é o seletor xpath e o segundo o contexto onde ele será buscado (opcional); 
+Uma boa alternativa para logar elementos do DOM no console é utilizar a função `$x()`;
+A função `$x()`, recebe dois parametros, o primeiro é o seletor xpath e o segundo o contexto onde ele será buscado (opcional); 
 
-### Exemplo de uso $x('//article')
+### Exemplo de uso `$x('//article')`
 Encontre os artigos do blog na aba console buscando por `$x('//article')`:
 
 ![Article](https://sc-cdn.scaleengine.net/i/2b03ba36860bb8136e43d1d3eaf82998.png)
@@ -73,9 +85,16 @@ Logue as chamadas ajax em tempo real no seu console apenas checando uma opção 
 3.  Cheque Log XMLHTTPRequests;
 4.  Pronto, olha como fica:
 
-![Assim](https://sc-cdn.scaleengine.net/i/9bff157c74c1e2b5b55a2fbe330e9f59.png)
+![](https://sc-cdn.scaleengine.net/i/9bff157c74c1e2b5b55a2fbe330e9f59.png)
+
 ![Fica](https://sc-cdn.scaleengine.net/i/229144a80649a0950248ee05c4e4b8cd.png)
+
+Acima um exemplo de um templateUrl do angularjs sendo logado.
+
+
 ![Isso](https://sc-cdn.scaleengine.net/i/f71c8d7fc9e24f91b36521e9014ef52e.png)
+
+E aqui uma visualização das chamadas GET e POST da url [http://dontpad.com/testeblog](http://dontpad.com/testeblog) durante alguns segundos.
 
 ## 5 . Descubra vários formatos de uma cor na aba Elements
 
@@ -117,16 +136,27 @@ Bem interessante para testar as chamadas que estão sendo feitas na aba 'Network
 
 Na aba 'Networks' selecione um item, clique com o botão direito e depois em 'Copy as cURL'. Você copiará para área de transferência algo do tipo:
 
-    curl 'http://jotateles.com.br/jmveiculos/js/lib/angular.min.js' -H 'Pragma: no-cache' -H 'Accept-Encoding: gzip, deflate, sdch' -H 'Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4,nb;q=0.2,fr;q=0.2' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36' -H 'Accept: */*' -H 'Referer: http://jotateles.com.br/jmveiculos/' -H 'Cookie: _hjUserId=daf385ee-892f-480e-81e7-10ee5c9f8aee; _hjIncludedInSample=1' -H 'Connection: keep-alive' -H 'Cache-Control: no-cache' --compressed
+    curl 'http://jotateles.com.br/jmveiculos/js/lib/angular.min.js' -H 
+    'Pragma: no-cache' -H 'Accept-Encoding: gzip, deflate, sdch' -H 'Accept-   
+    Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4,nb;q=0.2,fr;q=0.2' -H 'User-
+    Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like 
+    Gecko) Chrome/43.0.2357.81 Safari/537.36' -H 'Accept: */*' -H 'Referer: 
+    http://jotateles.com.br/jmveiculos/' -H 'Cookie: 
+    _hjUserId=daf385ee-892f-480e-81e7-10ee5c9f8aee; _hjIncludedInSample=1' -H 
+    'Connection: keep-alive' -H 'Cache-Control: no-cache' --compressed
 
 Que pode ser usado direto no console do seu sistema operacional para fazer uma chamadas curl para o arquivo selecionado usando todas as configurações do seu navegador!
 
 ![Exemplo](https://lh6.googleusercontent.com/-vGCP6Wrln1w/Ud2vAeCookI/AAAAAAAAA2w/Fc0qCO7bPew/w596-h398-no/copy-as-curl.gif)
 
-## Quer mais dicas, né? Veja as fontes aqui:
+## 11. Quer mais dicas, né? Veja as fontes aqui:
 
 Bem, utilizo várias dessas dicas no meu dia a dia a algum tempo, algumas a mais de ano, outras mais recentemente descobrí em alguns sites, como esses que cito abaixo:
 
 * [Google Developes Web Updates Tips](https://developers.google.com/web/updates/tip)
 * [Devtools tips for sublime text users](https://medium.com/google-developers/devtools-tips-for-sublime-text-users-cdd559ee80f8)
 * [DevTools Tips](http://devtoolstips.com/)
+
+E finalmente meus agradecimentos ao amigo [desenvolvedor *front end* Willian Ribeiro](http://willianribeiro.com.br) pela ajuda na escrita do post!
+
+Abraços
