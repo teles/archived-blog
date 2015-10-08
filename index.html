@@ -20,9 +20,12 @@ layout: default
             </h2>            
             <div class="raio-post-content">
                 <a href="{{ post.url | prepend: site.url }}" class="raio-post-excerpt-link" title='Clique para continuar lendo sobre "{{post.title}}"'>
-                  <img src="{{post.image}}" alt='Imagem de exibição para "{{post.title}}"' title="{{post.title}}">{% assign postWordsCount = post.content | number_of_words %}                  
+                  <img src="{{post.image}}" alt='Imagem de exibição para "{{post.title}}"' title="{{post.title}}">
+                  {% assign postExcerptWordsCount = post.excerpt | number_of_words %}                  
+                  {% assign postWordsCount = post.content | number_of_words %}                  
+                  {% assign moreWordsCount = postWordsCount | minus: postExcerptWordsCount %}                  
                   <span>{{ post.excerpt | truncatewords: 100 }}</span>
-                  <small>(mais {{ postWordsCount }} palavras ... )</small>
+                  <small>(mais {{ moreWordsCount }} palavras ... )</small>
                 </a>
             </div>
         </article>          
