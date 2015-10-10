@@ -13,5 +13,6 @@ facebook_username: jota.teles
 # ids for third party scripts
 hotjar_id: 64233
 google_analytics_id: UA-68664870
+disqus_shortname: jotateles
 # Build settings
 markdown: kramdown
