@@ -22,7 +22,7 @@ Bacana, né?
 
 ## Repositórios para front-enders
 
-Os repositórios disponíveis são de diversas linguagens: Bash, C, C++, C#, Coffeescript, Documentation, Go, JavaScript, Node, PHP, Python, Ruby.
+Os repositórios disponíveis são de diversas linguagens: Bash, C, C++, C#, Coffeescript, Go, JavaScript, Node, PHP, Python, Ruby.
 
 Para quem é desenvolvedor front-end os repositórios mais legais que encontrei para fazer os pull requests são:
 
