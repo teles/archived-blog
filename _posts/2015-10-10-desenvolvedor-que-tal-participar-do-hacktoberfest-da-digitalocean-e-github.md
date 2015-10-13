@@ -22,7 +22,7 @@ Bacana, né?
 
 ## Repositórios para front-enders
 
-Os repositórios disponíveis são de diversas linguagens: Bash, C, C++, C#, Coffeescript, Go, JavaScript, Node, PHP, Python, Ruby.
+Caso você não saiba por onde começar o Hacktoberfest sugere alguns repositórios de diversas linguagens como: Bash, C, C++, C#, Coffeescript, Go, JavaScript, Node, PHP, Python, Ruby.
 
 Para quem é desenvolvedor front-end os repositórios mais legais que encontrei para fazer os pull requests são:
 
@@ -31,7 +31,12 @@ Para quem é desenvolvedor front-end os repositórios mais legais que encontrei 
 * [Learn X in Y Minutes](https://github.com/adambard/learnxinyminutes-docs) - Repositório com a proposta de agregar tutoriais rápidos de linguagens de programação diversas.
 
 É isso aí! Se ganharem a camiseta me contem depois por aqui.
-A dica de hoje chegou até mim pelo [desenvolvedor front-end William Oliveira](http://woliveiras.com.br/). Valeu, William!
+A dica de hoje chegou até mim pelo [desenvolvedor front-end William Oliveira](http://woliveiras.com.blr/). Valeu, William!
+
+## Editado: "Posso fazer os pull-requests em qualquer repositório ou tem que ser na lista de repositórios do site do Hacktoberfest?"
+
+Sim! Você pode fazer pull-requests em qualquer repositório open source do github e a lista do site é apenas uma lista de sugestões. A fonte da informação é esse blog post do [blog da DigitalOcean](https://www.digitalocean.com/company/blog/hacktoberfest-is-back/).
+
+> "... we have chosen 31 awesome open source projects to highlight for each day in October, inviting participants to check out, use, and contribute to them. (You aren’t limited to only these projects — use them as a reference point if you don’t know where to begin!) We’ve split them out by programming language to make it easier for you to find one that piques your interest."
 
 Abraços
-
