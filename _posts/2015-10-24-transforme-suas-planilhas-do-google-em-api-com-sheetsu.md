@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transforme suas planilhas do Google em API com Sheetsu
-categories: []
+title: Transforme suas planilhas do Google em API com Sheetsu em 3 passos
+categories: [javascript]
 published: False
 
 ---
@@ -19,13 +19,64 @@ Para exemplificar o uso do Sheetsu criei uma planilha no Google Drive com ideias
 
 A ideia é permitir que usuários que nem sabem que a planilha existe possam inserir novos dados na minha planilha e verificar as ideias existentes.
 
-## Buscando dados no Sheetsu com GET
+## 1. Crie sua API
 
-A primeira coisa que fiz depois de criar minha planilha foi ir até o[Sheetsu](https://sheetsu.com) e criar minha planilha com o endereço [https://sheetsu.com/apis/9a70b9b9 - veja o json retornado](https://sheetsu.com/apis/9a70b9b9).
+A primeira coisa que fiz depois de criar minha planilha foi ir até o[Sheetsu](https://sheetsu.com) e inserir a url da [minha planilha do Google Drive](https://docs.google.com/spreadsheets/d/1ZhV77UEhpQeRytrngCCjqN4rEyVqGo0JG70WpphbyE4/edit#gid=0) no campo indicado. 
 
-Depois criei um trecho de código javascript para lidar com get e post.
+O serviço então transformou minha planilha em um endpoint json com a seguinte url [https://sheetsu.com/apis/9a70b9b9 - veja o json retornado](https://sheetsu.com/apis/9a70b9b9)
 
+Agora vou mostrar como pegar os dados da planilha e como inserir novas linhas na planilha com javascript.
 
-O próprio criador do Sheetsu, [Michael Oblak explica que o Sheetsu se propõe a tarefas menores](https://www.producthunt.com/tech/sheetsu) e mais rápidas como criação de formulários, MVPs ou pequenos projetos.
+Para finalidade de explicação vou utilizar a biblioteca [qwest](https://github.com/pyrsmk/qwest) nesse exemplo.
+
+## 2. Buscando dados da planilha com GET
+
+Abra o console do seu navegador e cole esse exemplo:
+
+    var ajax = qwest; 
+    var promiseDadosPlanilha = ajax.get('https://sheetsu.com/apis/9a70b9b9');
+    
+    // Função ajax que será chamada quando os dados forem recebidos do Sheetsu
+    // Caso a requisição tenha ocorrido com sucesso, faça:
+    promiseDadosPlanilha.then(function(dadosRequest, respostaSheetsu){    
+        var dadosPlanilha = respostaSheetsu.result;
+        console.table(dadosPlanilha);    
+    });
+
+Você deverá ver uma tabela com os dados da planilha. 
+O segredo do exemplo está todo na segunda linha, isto é, para receber os dados do Sheetsu basta fazer um GET para a url da sua API.
+
+## 3. Inserindo dados na planilha com POST
+
+Abra o console do seu navegador e cole esse exemplo:
+
+    var ajax = qwest; 
+    var novaLinha = {
+        ideia: 'INSIRA AQUI SUA IDEIA',
+        categoria: 'exemplo'
+    };
+    var promiseInserirNovaLinha = ajax.post('https://sheetsu.com/apis/9a70b9b9', novaLinha);
+    
+    // Função ajax que será chamada quando os dados forem recebidos do Sheetsu
+    promiseInserirNovaLinha.then(function(dadosRequest, respostaSheetsu){    
+        // Caso a requisição tenha ocorrido com sucesso, faça:
+        console.log('Dados inseridos com sucesso');    
+    });
+
+## Conclusões
+
+Sheetsu se mostrou um serviço bacana que vale a pena dar uma olhada para implementações simples, criação de MVP e projetos pequenos como [afirmado pelo próprio criador do Sheetsu Michael Oblak](https://www.producthunt.com/tech/sheetsu). Nada de substituir o backend da sua aplicação por Sheetsu, ok? :)
+
+Eu, por exemplo, uso o Sheetsu para atualizar[ [esse repositório com links de SEO](https://github.com/teles/awesome-seo) utilizando uma planilha do Google Drive, mas não é difícil imaginar outras utilidades para o serviço, como:
+
+* Aplicativo de todo list;
+* Página de administração para permitir edição de conteúdo de um site;
+* Exemplo didático focado em GET e POST;
+* Criar formulários, lista de links, agenda de contatos, etc.
+
+Enfim, bacanudo esse Sheetsu! #fikdica
+
+<script type="text/javascript" src='https://cdn.rawgit.com/pyrsmk/qwest/master/qwest.min.js'></script>
+
 
 
