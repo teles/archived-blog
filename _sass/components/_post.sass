@@ -60,11 +60,26 @@
          border-style: solid 
          border-top-color: $color-primary
       blockquote
-         padding-left: spacing(2)
-         padding-right: spacing(2)
-         font-style: italic
          color: $color-gray-dark
-         text-align: justify         
+         background-color: $color-gray-light
+         font-style: italic
+         padding: spacing(1) spacing(2)
+         text-align: justify
+      table
+         border: 1px solid $color-blue
+         width: 100%
+         tr 
+            line-height: 1.75
+            td,
+            th
+               text-indent: spacing(1)
+         thead
+            background-color: $color-blue
+            color: $color-white
+            text-align: left   
+         tbody
+            tr:nth-child(even)
+               background-color: $color-silver
    .raio-post-info
       margin-top: spacing(1)
       font-size: 13px

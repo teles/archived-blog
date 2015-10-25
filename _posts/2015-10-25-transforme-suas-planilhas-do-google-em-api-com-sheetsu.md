@@ -2,7 +2,8 @@
 layout: post
 title: Transforme suas planilhas do Google em API com Sheetsu em 3 passos
 categories: [javascript]
-published: False
+published: True
+image: "/images/posts/sheetsu/sheetsu-printscreen.png"
 
 ---
 
@@ -21,15 +22,15 @@ A ideia é permitir que usuários que nem sabem que a planilha existe possam ins
 
 ## 1. Crie sua API
 
-A primeira coisa que fiz depois de criar minha planilha foi ir até o[Sheetsu](https://sheetsu.com) e inserir a url da [minha planilha do Google Drive](https://docs.google.com/spreadsheets/d/1ZhV77UEhpQeRytrngCCjqN4rEyVqGo0JG70WpphbyE4/edit#gid=0) no campo indicado. 
+A primeira coisa que fiz depois de criar minha planilha foi ir até o [Sheetsu](https://sheetsu.com) e inserir a url da [minha planilha do Google Drive](https://docs.google.com/spreadsheets/d/1ZhV77UEhpQeRytrngCCjqN4rEyVqGo0JG70WpphbyE4/edit#gid=0) no campo indicado. 
 
-O serviço então transformou minha planilha em um endpoint json com a seguinte url [https://sheetsu.com/apis/9a70b9b9 - veja o json retornado](https://sheetsu.com/apis/9a70b9b9)
+O serviço então transformou minha planilha em um endpoint json com a seguinte url [https://sheetsu.com/apis/9a70b9b9 - veja o json retornado](https://sheetsu.com/apis/9a70b9b9).
 
 Agora vou mostrar como pegar os dados da planilha e como inserir novas linhas na planilha com javascript.
 
-Para finalidade de explicação vou utilizar a biblioteca [qwest](https://github.com/pyrsmk/qwest) nesse exemplo.
-
 ## 2. Buscando dados da planilha com GET
+
+> Atenção: Para finalidade de explicação vou utilizar a biblioteca [qwest](https://github.com/pyrsmk/qwest) nesses exemplos, se você copiar e colar esse código em algum lugar, lembre de copiar também o qwest.
 
 Abra o console do seu navegador e cole esse exemplo:
 
@@ -67,14 +68,14 @@ Abra o console do seu navegador e cole esse exemplo:
 
 Sheetsu se mostrou um serviço bacana que vale a pena dar uma olhada para implementações simples, criação de MVP e projetos pequenos como [afirmado pelo próprio criador do Sheetsu Michael Oblak](https://www.producthunt.com/tech/sheetsu). Nada de substituir o backend da sua aplicação por Sheetsu, ok? :)
 
-Eu, por exemplo, uso o Sheetsu para atualizar[ [esse repositório com links de SEO](https://github.com/teles/awesome-seo) utilizando uma planilha do Google Drive, mas não é difícil imaginar outras utilidades para o serviço, como:
+Eu, por exemplo, uso o Sheetsu para atualizar [esse repositório com links de SEO](https://github.com/teles/awesome-seo) utilizando uma planilha do Google Drive, mas não é difícil imaginar outras utilidades para o serviço, como:
 
 * Aplicativo de todo list;
 * Página de administração para permitir edição de conteúdo de um site;
 * Exemplo didático focado em GET e POST;
 * Criar formulários, lista de links, agenda de contatos, etc.
 
-Enfim, bacanudo esse Sheetsu! #fikdica
+Enfim, bacanudo esse [Sheetsu](https://sheetsu.com)! Fica a dica :)
 
 <script type="text/javascript" src='https://cdn.rawgit.com/pyrsmk/qwest/master/qwest.min.js'></script>
 
