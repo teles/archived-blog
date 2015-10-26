@@ -30,19 +30,20 @@ Agora vou mostrar como pegar os dados da planilha e como inserir novas linhas na
 
 ## 2. Buscando dados da planilha com GET
 
-> Atenção: Para finalidade de explicação vou utilizar a biblioteca [qwest](https://github.com/pyrsmk/qwest) nesses exemplos, se você copiar e colar esse código em algum lugar, lembre de copiar também o qwest.
+> Atenção: Para finalidade de explicação vou utilizar a biblioteca [jQuery](https://github.com/jquery/jquery) nesses exemplos, se você copiar e colar esse código em algum lugar, lembre de copiar também o jQuery.
 
 Abra o console do seu navegador e cole esse exemplo:
 
-    var ajax = qwest; 
-    var promiseDadosPlanilha = ajax.get('https://sheetsu.com/apis/9a70b9b9');
-    
+    $.ajax({
+        type: "GET",
+        url: 'https://sheetsu.com/apis/9a70b9b9',
+        success: processarDadosPlanilha
+    });
     // Função ajax que será chamada quando os dados forem recebidos do Sheetsu
     // Caso a requisição tenha ocorrido com sucesso, faça:
-    promiseDadosPlanilha.then(function(dadosRequest, respostaSheetsu){    
-        var dadosPlanilha = respostaSheetsu.result;
-        console.table(dadosPlanilha);    
-    });
+    function processarDadosPlanilha(data){
+        console.table(data.result);            
+    }
 
 Você deverá ver uma tabela com os dados da planilha. 
 O segredo do exemplo está todo na segunda linha, isto é, para receber os dados do Sheetsu basta fazer um GET para a url da sua API.
@@ -51,18 +52,25 @@ O segredo do exemplo está todo na segunda linha, isto é, para receber os dados
 
 Abra o console do seu navegador e cole esse exemplo:
 
-    var ajax = qwest; 
+    $.ajax({
+        type: "POST",
+        url: 'https://sheetsu.com/apis/9a70b9b9',
+        data: novaLinha,
+        success: processarDadosPlanilha
+    });
+    
     var novaLinha = {
         ideia: 'INSIRA AQUI SUA IDEIA',
         categoria: 'exemplo'
-    };
-    var promiseInserirNovaLinha = ajax.post('https://sheetsu.com/apis/9a70b9b9', novaLinha);
+    };    
     
     // Função ajax que será chamada quando os dados forem recebidos do Sheetsu
-    promiseInserirNovaLinha.then(function(dadosRequest, respostaSheetsu){    
-        // Caso a requisição tenha ocorrido com sucesso, faça:
-        console.log('Dados inseridos com sucesso');    
-    });
+    // Caso a requisição tenha ocorrido com sucesso, faça:
+    function processarDadosPlanilha(data){
+        console.log('Dados inseridos com sucesso');
+    }
+
+Para inserir uma nova linha numa planilha, basta fazer um POST e passar um objeto javascript como 'data' da requisição. Nesse caso, nosso objeto precisa ter as chaves 'ideia' e 'categoria'.
 
 ## Conclusões
 
@@ -77,7 +85,12 @@ Eu, por exemplo, uso o Sheetsu para atualizar [esse repositório com links de SE
 
 Enfim, bacanudo esse [Sheetsu](https://sheetsu.com)! Fica a dica :)
 
-<script type="text/javascript" src='https://cdn.rawgit.com/pyrsmk/qwest/master/qwest.min.js'></script>
+### Observações
 
+Inicialmente eu estava usando a biblioteca [qwest](https://github.com/pyrsmk/qwest) para fazer as requisições ajax dos exemplos, mas acabei trocando-a por jQuery.
 
+**Motivo**: Com qwest eu teria que configurar o XDomainRequest do request para permitir que meu site http fizesse uma requisição ao https do Sheetsu, então para não complicar coloquei o jQuery mesmo :P
 
+Embora eu não use muito o jQuery é interessante ver como ele lida com a questão do ajax sem pedir que o usuário configure alguma coisa.
+
+<script type="text/javascript" src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
