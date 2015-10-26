@@ -1,12 +1,25 @@
-  <div class="raio-pagination">
-     <span class="raio-pagination-count"><strong>Página 44</strong> de 829</span>
-     <ul class="raio-pagination-list">
-        <li class="raio-pagination-item"><a href=""> Primeira </a></li>  
-        <li class="raio-pagination-item"><a href=""> << </a></li>              
-        <li class="raio-pagination-item"><a href="">43</a></li>
-        <li class="raio-pagination-item raio-pagination-item-active"><a href="#">44</a></li>
-        <li class="raio-pagination-item"><a href="">45</a></li>
-        <li class="raio-pagination-item"><a href=""><strong>>></strong></a></li>          
-        <li class="raio-pagination-item"><a href=""> Última </a></li>  
-     </ul>      
-  </div> 
+{% if paginator.total_pages > 1 %}
+    <div class="raio-pagination">
+        <span class="raio-pagination-count"><strong>Página {{paginator.page}}</strong> de {{paginator.total_pages}}</span>     
+        <ul class="raio-pagination-list">
+    
+    <!-- Anterior -->
+    {% if paginator.previous_page %}
+            <li class="raio-pagination-item">
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> &laquo; Anterior</a>
+            </li>  
+    {% else %}
+            <li class="raio-pagination-item raio-pagination-item-inactive">&laquo; Anterior</li>
+    {% endif %}
+
+    <!-- Próxima -->
+    {% if paginator.next_page %}
+            <li class="raio-pagination-item">
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Próxima &raquo;</a>
+            </li>          
+    {% else %}
+            <li class="raio-pagination-item raio-pagination-item-inactive">Próxima &raquo;</li>
+    {% endif %}     
+        </ul>      
+    </div> 
+{% endif %}

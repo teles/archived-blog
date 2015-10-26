@@ -3,7 +3,7 @@ layout: default
 ---
 
     <section class="raio-posts-container">
-      {% for post in site.posts %}
+      {% for post in paginator.posts %}
         <article class="raio-post">
             <div class="raio-post-info">
               <span class="raio-post-date">{% include snippets/post-date.html %}</span>
@@ -30,5 +30,5 @@ layout: default
             </div>
         </article>          
       {% endfor %}
-      <!-- {% include pagination.html %}         -->
+      {% include pagination.html %}        
     </section>
