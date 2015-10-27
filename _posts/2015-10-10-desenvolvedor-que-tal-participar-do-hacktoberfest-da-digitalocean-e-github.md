@@ -40,3 +40,9 @@ Sim! Você pode fazer pull-requests em qualquer repositório open source do gith
 > "... we have chosen 31 awesome open source projects to highlight for each day in October, inviting participants to check out, use, and contribute to them. (You aren’t limited to only these projects — use them as a reference point if you don’t know where to begin!) We’ve split them out by programming language to make it easier for you to find one that piques your interest."
 
 Abraços
+
+## Editado 27/10/2015 - Verifique seus pull requests
+
+Quem quiser verificar o status dos seus pull requests [pode acessar aqui o scripts de verificação de pull requests do Hacktoberfest](http://hf.heidilabs.com).
+
+
