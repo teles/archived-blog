@@ -35,7 +35,7 @@ Escrever html, para um bom desenvolvedor front-end, não é uma tarefa acessóri
 
 Escrever bom html envolve conhecimentos variados de: semântica de código; SEO; acessibilidade; micro dados ([microformats](http://microformats.org/) e [schema.org](http://schema.org)); [page speed](https://developers.google.com/speed/pagespeed/), utilização de novas tags e atributos como header, footer, aside, picture, datalist, patterns para inputs, etc.
 
-Enquanto isso, escrever css se mostra um ramo ainda mais específico e que tem revelado bons profissionais, conhecí vários front-enders (como [Willian Ribeiro](http://willianribeiro.com.br/), [Luiz Otávio](luizotcarvalho.com.br) e Guto Oliveira) com grande habilidade no css e pude aprender muito com eles.
+Enquanto isso, escrever css se mostra um ramo ainda mais específico e que tem revelado bons profissionais, conhecí vários front-enders (como [Willian Ribeiro](http://willianribeiro.com.br/), [Luiz Otávio](http://luizotcarvalho.com.br) e Guto Oliveira) com grande habilidade no css e pude aprender muito com eles.
 
 ## Escrever bom css é:
 
