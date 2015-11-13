@@ -4,7 +4,7 @@ title: O que é o Jekyll e como criar seu blog de tecnologia com ele.
 category: 'jekyll'
 tags: ['jekyll', 'blog', 'github', 'github pages']
 published: True
-image: "/images/posts/jekyll/jekyll-o-que-e.png"
+image: "/images/minified/posts/jekyll/jekyll-o-que-e.png"
 
 ---
 
@@ -20,7 +20,7 @@ Neste artigo vou mostrar o que é o Jekyll e porque eu o escolhi para [meu blog 
 
 ## Como o Jekyll funciona? 
 
-![É assim que um post do meu blog se parece no modo edição.](/images/posts/jekyll/meu-ambiente-de-trabalho-com-jekyll-e-sublime.png)
+![É assim que um post do meu blog se parece no modo edição.](/images/minified/posts/jekyll/meu-ambiente-de-trabalho-com-jekyll-e-sublime.png)
 
 Quando você instala o jekyll o que ele faz é fornecer um projeto inicial com uma estrutura de pastas padrão e quando você altera os arquivos desse projeto inicial, incluindo posts ou editando o estilo do blog, o jekyll se encarrega de transformar tudo isso em uma pasta chamada **"_site"** que será o seu blog.
 
@@ -39,7 +39,7 @@ Isso significa que tudo que você precisa fazer para ter seu blog rodando no git
 * Entrar em http://**seu-nome-de-usuario-github**.github.io e pronto, seu blog estará online.
 
 ## Escreva seus posts com markdown
-![Pacote do sublime para jekyll](/images/posts/jekyll/jekyll-sublime-package.png)
+![Pacote do sublime para jekyll](/images/minified/posts/jekyll/jekyll-sublime-package.png)
 
 Dentro da estrutura de pastas de um projeto Jekyll, a pasta **'_posts'** é destinada aos posts do seu blog.
 
@@ -55,7 +55,7 @@ Se você é usuário do sublime recomendo a utilização [desse plugin](https://
 
 ## Edite o estilo do seu blog com sass
 
-![Rodando o comando jekyll serve.](/images/posts/jekyll/jekyll-serve.png)
+![Rodando o comando jekyll serve.](/images/minified/posts/jekyll/jekyll-serve.png)
 
 Boa notícia, front enders! O Jekyll usa SASS por padrão e caso você altere um arquivo .sass ou .scss dentro da pasta **'_sass'** o seu css final é regerado automaticamente, sem que você precise se preocupar em instalar mais nada.
 

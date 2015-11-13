@@ -3,7 +3,7 @@ layout: post
 title: E ai, desenvolvedor. Que tal participar do Hacktoberfest promovido por DigitalOcean e Github?
 category: 'dica'
 published: True
-image: "/images/posts/hacktoberfest/print-screen-hacktoberfest.png"
+image: "/images/minified/posts/hacktoberfest/print-screen-hacktoberfest.png"
 tags: ['eventos', 'github', 'camisetas', 'promoções', 'digitalocean']
 
 ---

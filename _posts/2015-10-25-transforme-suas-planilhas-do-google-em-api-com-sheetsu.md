@@ -3,7 +3,7 @@ layout: post
 title: Transforme suas planilhas do Google em API com Sheetsu em 3 passos
 category: 'javascript'
 published: True
-image: "/images/posts/sheetsu/sheetsu-printscreen.png"
+image: "/images/minified/posts/sheetsu/sheetsu-printscreen.png"
 
 ---
 

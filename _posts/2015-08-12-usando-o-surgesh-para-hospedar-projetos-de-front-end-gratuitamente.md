@@ -3,7 +3,7 @@ layout: post
 title: Usando o surge.sh para hospedar projetos de front end gratuitamente.
 category: 'dica'
 published: True
-image: "/images/posts/surge/surge-capa.png"
+image: "/images/minified/posts/surge/surge-capa.png"
 ---
 
 Galera, recentemente estava com um problema para subir arquivos estáticos para a internet gratuitamente e encontrei uma ferramenta excelente para essa finalidade.
@@ -30,7 +30,7 @@ Pronto!
 
 A primeira vez que você rodar o comando o surge deve te pedir para cadastrar um email e senha.
 
-![surge.sh rodando em terminal ubuntu](/images/posts/surge/surge-terminal.png)
+![surge.sh rodando em terminal ubuntu](/images/minified/posts/surge/surge-terminal.png)
 
 Não esqueça também de definir a url em que você quer que seu projeto fique disponível.
 

@@ -3,7 +3,7 @@ layout: post
 title: Desenvolvimento front-end além do "É só html e css"
 category: 'opinião'
 published: True
-image: "/images/posts/alemdohtmlecss/htmlcssjavascriptgithub.png"
+image: "/images/minified/posts/alemdohtmlecss/htmlcssjavascriptgithub.png"
 
 ---
 
@@ -13,7 +13,7 @@ Não me cabe fazer uma crítica aos amigos que analisam a área do front-end des
 
 Como já foi analisado no excelente artigo ["Por que não encontramos desenvolvedores front-end"](http://letanure.github.io/2015/02/10/por-que-nao-podemos-encontrar-desenvolvedores-front-end) o desenvolvimento front-end como ramo de trabalho é uma ideia bastante recente.
 
-![Gráficos Google Trends para pesquisas sobre desenvolvimento front end](/images/posts/alemdohtmlecss/alem-do-html-e-css-google-trends.png)
+![Gráficos Google Trends para pesquisas sobre desenvolvimento front end](/images/minified/posts/alemdohtmlecss/alem-do-html-e-css-google-trends.png)
 
 Acima um [gráfico do Google Trends](https://www.google.com/trends/explore#q=front%20end%20developer%2C%20desenvolvedor%20front%20end&cmpt=q&tz=Etc%2FGMT%2B2) mostra que as buscas por 'front end developer' começaram no ano de 2009, enquanto as buscar por 'desenvolvedor front end' com uma força muito menor começaram entre 2013 e 2014, ou seja, trata-se realmente de uma área nova.
 
@@ -23,7 +23,7 @@ Essa área assim tão nova tem abraçado os antigos web designers e programadore
 
 ## "É só html e css"
 
-![E se eu te disser...](/images/posts/alemdohtmlecss/morpheus-meme.jpg)
+![E se eu te disser...](/images/minified/posts/alemdohtmlecss/morpheus-meme.jpg)
 
 Embora html e css possam te fazer lembrar daquele seu primo que adorava o frontpage, elas são juntamente com o javascript, de fato as linguagens da web. 
 
