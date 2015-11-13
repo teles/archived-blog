@@ -3,7 +3,7 @@ layout: post
 title: 10 dicas rápidas para quem usa chrome (ou chromium) no desenvolvimento front end.
 category: 'dica'
 published: True
-image: "https://sc-cdn.scaleengine.net/i/ffdac48fc3a225b884128da32b2db6ae.png"
+image: "/images/minified/posts/chrome/exemploconsolelog.png"
 tags: ['devtools', 'css', 'xpath', 'chrome', 'chromium', 'rgb', 'hsl', 'curl', ':hover', ':active']
 ---
 

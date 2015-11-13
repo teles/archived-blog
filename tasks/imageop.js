@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var imageop = require('gulp-image-optimization');
 
 module.exports = function() {
-    gulp.src(['images/**/*.png','images/**/*.jpg','images/**/*.gif','images/**/*.jpeg'])
+    gulp.src(['images/**/*.png','images/**/*.jpg','images/**/*.gif','images/**/*.jpeg', '!images/minified/**/**'])
     	.pipe(imageop({
         	optimizationLevel: 5,
         	progressive: true,
