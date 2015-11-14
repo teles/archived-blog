@@ -10,11 +10,22 @@ twitter_username: raiofront
 github_username:  teles
 author_name: Jota Teles
 facebook_username: jota.teles
+
 # ids for third party scripts
 hotjar_id: 64233
 google_analytics_id: UA-68664870
 disqus_shortname: jotateles
+
 # Build settings
 markdown: kramdown
 paginate: 4
 paginate_path: "/pagina/:num/"
+exclude:
+  - 'bower_components/**/*'
+  - 'node_modules/**/*'
+  - 'README.md'
+  - 'bower.json'
+  - 'package.json'
+  - 'Gruntfile.js'
+  - 'Gulpfile.js'
+  - 'tasks'
