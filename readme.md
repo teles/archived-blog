@@ -10,6 +10,4 @@ Me ajude a escolher o tema do próximo post nesse [formulário do typeform](http
 ![Printscreen das questões do typeform]
 
 ## Contato
-![Entre em contato comigo](http://i.imgur.com/0hEwe8b.gif)
-
 [em breve - formulário no site]
