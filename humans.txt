@@ -1,0 +1,25 @@
+/* TEAM */
+
+Project Lead: Jota Teles
+Site: http://jotateles.com.br
+Location: São Paulo, SP - Brasil
+
+/* THANKS */
+
+GitHub
+Jekyll
+
+/* SITE */
+
+Standards: HTML5, CSS3, JS, Responsive, Mobile-First
+Components:
+  * Gulp
+  * Jekyll
+  * SaSS
+  * Compass mixins
+  * Highlightjs
+  * Node.js
+  * NPM
+
+Software: Sublime Text, Terminator, Gulp.js, Ubuntu
+Source: https://github.com/teles/teles.github.io
