@@ -57,7 +57,7 @@ Enquanto o css algumas vezes aparece como um ponto de interseção entre o traba
 
 Minha experiência pessoal mostra que o motivo disso é que a lógica de negócios está saindo cada dia mais do back-end e migrando para o front-end (falo mais sobre isso a seguir), e a expertise de muitos programadores back-end tem sido largamente aproveitada para escrita de javascript.
 
-Escrever um bom javascript, não tem mais nenhuma relação com copiar funções inteiras da internet para fazer o cursos do mouse piscar. 
+Escrever um bom javascript, não tem mais nenhuma relação com copiar funções inteiras da internet para fazer o cursor do mouse piscar. 
 
 Um bom desenvolvimento de javascript é uma tarefa que leva em conta todos os aspectos do bom desenvolvimento de software, além das particularidades de se trabalhar com javascript como entendimento de CORS (esse danadinho!), processamento assíncrono, cabeçalhos http, como trabalhar com formatos de imagem variados como svg e png, manipulação de DOM, databind com o html, single page application, gerenciadores de tasks, etc.
 
