@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Links para front-enders 1 - css para json, micro bibliotecas js, html5 datalist, pixel art em sass, guia do trabalho remoto e muito mais ... 
+title: Links para front-enders \#1\ - css para json, html5 datalist, pixel art em sass, guia do trabalho remoto e mais ... 
 categories: [front-links]
 image: "/images/minified/posts/linksdasemana1/links-da-semana.png"
 published: true
