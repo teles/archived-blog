@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Links da semana #1
-categories: [links-da-semana]
+title: Links para front-enders 1: css para json, micro bibliotecas js, html5 datalist, pixel art em sass, guia do trabalho remoto e muito mais ... 
+categories: [front-links]
 image: "/images/minified/posts/linksdasemana1/links-da-semana.png"
 published: true
 
