@@ -22,7 +22,8 @@ Entre outras vantagens de se criar uma paleta de cores estão:
 * Fornecer [apenas um jeito óbvio de fazer as coisas](https://ark4n.wordpress.com/2009/05/25/pyctoria-5-o-zen-do-python/);
 
 Agora que eu já te convencí à criar sua paleta de cores (ou a abandonar esse artigo que não entra logo na parte do código) vamos falar de como fazer isso :D
-Como criar uma paleta de cores para css?
+
+## Como criar uma paleta de cores para css?
 
 As abordagens e implementações para criar uma paleta de cores pra ser utilizada no css podem variar.
 
@@ -114,7 +115,7 @@ O importante aqui é evitar declarar cores que não estejam dentro da paleta pre
 
 A abordagem de cores por contexto precisa ser bem pensada por designers e front-enders antes de ser implementada, seus pontos fortes são facilitar a troca de cores dos estados existentes, incentivar uma componentização bem planejada e uma discussão sobre cores entre designers e front-enders. 
 
-<h2 id='tldr'>Conclusão / tldr;</h2>
+## Conclusão / tldr;
 
 * É importante concentrar todas as cores disponíveis em um sistema web em uma paleta de cores css;
 * Essa paleta normalmente é uma matriz com vários matizes e variações de matizes;
