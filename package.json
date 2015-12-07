@@ -1,18 +1,8 @@
 {
-  "name": "jotateles.com.br",
+  "name": "teles.github.io",
   "version": "1.0.0",
-  "description": "Raio front-endizador",
+  "description": "Raio frontendizador, blog sobre tecnologias front end, css, javascript, html.",
   "main": "Gruntfile.js",
-  "dependencies": {
-    "gulp": "^3.9.0",
-    "gulp-install": "^0.6.0",
-    "gulp-load-plugins": "^1.1.0",
-    "highlight.js": "^8.6.0",
-  },
-  "devDependencies": {
-    "gulp-htmlmin": "^1.2.0",
-    "gulp-image-optimization": "^0.1.3"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,13 +13,21 @@
   "keywords": [
     "css",
     "javascript",
-    "front-end",
+    "jekyll",
     "html"
   ],
   "author": "Jota Teles",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/teles/teles.github.io/issues"
   },
-  "homepage": "https://github.com/teles/teles.github.io#readme"
+  "homepage": "https://github.com/teles/teles.github.io#readme",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-htmlmin": "^1.2.0",
+    "gulp-image-optimization": "^0.1.3",
+    "gulp-install": "^0.6.0",
+    "gulp-load-plugins": "^1.1.0",
+    "highlight.js": "^9.0.0"
+  }
 }
