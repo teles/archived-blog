@@ -9,14 +9,14 @@ published: true
 
 Oba, que beleza! Hora de falar de cores.
 
-Uma das várias tarefas do desenvolvedor front-ender é trabalhar em conjunto com o time de designers para criar uma arquitetura css que seja capaz de reproduzir os componentes e padrões de user interface estabelecidos no design de um sistema.
+Uma das várias tarefas do desenvolvedor front-end é trabalhar em conjunto com o time de designers para criar uma arquitetura css que seja capaz de reproduzir os componentes e padrões de user interface estabelecidos no design de um sistema.
 
 Nesse contexto, criar uma paleta de cores padronizada fiel aos requisitos do design é um passo importante para construir a identidade visual de um sistema e permitir que seu código css seja fácil de entender, manter, sem "números mágicos" e cores que nunca existiram na paleta do designer.
 
 Entre outras vantagens de se criar uma paleta de cores estão:
 
 * Incentivar que designers e desenvolvedores interajam e discutam sobre o projeto visual do sistema;
-* Permitir que o front-ender seja um facilitador na hora da construção da paleta com ferramentas que facilitem a manipulação de cores, como os mixins do compass, por exemplo;
+* Permitir que o desenvolvedor front-end seja um facilitador na hora da construção da paleta com ferramentas que facilitem a manipulação de cores, como os mixins do compass, por exemplo;
 * Facilitar a busca por cores no código: A menos que você seja a fera do [What the color?](http://leaverou.github.io/whathecolor/)  procurar por ````#0000bd```` e ````hsl(219, 100%, 49%)````  dá mais trabalho do que procurar por ````minhas-cores(‘dark-blue’, ‘00’)```` ou ````minhas-cores(‘dark-blue’, ‘10’)````;
 * Restringir as discussões sobre que notação de cor usar (hexa, hsl ou rgb) à fase de criação da paleta css;
 * Fornecer [apenas um jeito óbvio de fazer as coisas](https://ark4n.wordpress.com/2009/05/25/pyctoria-5-o-zen-do-python/);
@@ -113,7 +113,7 @@ O que fizemos basicamente foi criar uma série de variáveis em scss que utiliza
 
 O importante aqui é evitar declarar cores que não estejam dentro da paleta previamente definida. 
 
-A abordagem de cores por contexto precisa ser bem pensada por designers e front-enders antes de ser implementada, seus pontos fortes são facilitar a troca de cores dos estados existentes, incentivar uma componentização bem planejada e uma discussão sobre cores entre designers e front-enders. 
+A abordagem de cores por contexto precisa ser bem pensada por designers e desenvolvedores front-end antes de ser implementada, seus pontos fortes são facilitar a troca de cores dos estados existentes, incentivar uma componentização bem planejada e uma discussão sobre cores entre designers e devs front-end. 
 
 ## Conclusão / tldr;
 
