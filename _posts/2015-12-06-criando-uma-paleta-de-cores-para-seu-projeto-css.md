@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Criando a paleta de cores para seu projeto css - uma abordagem focada em componentização
-categories: [css]
+title: "Criando a paleta de cores para seu projeto css - uma abordagem focada em componentização"
+categories: 
+  - css
 image: "http://monovektor.com/wp-content/uploads/2011/06/NES-590x166.png"
 published: true
-
 ---
+
 
 Oba, que beleza! Hora de falar de cores.
 
@@ -115,7 +116,7 @@ O importante aqui é evitar declarar cores que não estejam dentro da paleta pre
 
 A abordagem de cores por contexto precisa ser bem pensada por designers e desenvolvedores front-end antes de ser implementada, seus pontos fortes são facilitar a troca de cores dos estados existentes, incentivar uma componentização bem planejada e uma discussão sobre cores entre designers e devs front-end. 
 
-## Conclusão / tldr;
+## Conclusão:
 
 * É importante concentrar todas as cores disponíveis em um sistema web em uma paleta de cores css;
 * Essa paleta normalmente é uma matriz com vários matizes e variações de matizes;
