@@ -1,6 +1,11 @@
 ---
 published: false
+layout: post
+categories: 
+  - css
+image: "http://monovektor.com/wp-content/uploads/2011/06/NES-590x166.png"
 ---
+
 
 # Melhores pens de CSS puro segundo o site CSS Design Awards. Tem um pen meu na lista.
 
@@ -49,5 +54,3 @@ O código do projeto está todo no [repositório github do pure-css-parallel-par
 Faça um fork, dê estrelinhas, seja feliz e não esqueça de dar uma olhada nos outros [pens feitos com css puro da lista do css design awards](http://www.cssdesignawards.com/articles/best-pure-css-pens-of-2015/268/).
 
 Abraço
-
-
