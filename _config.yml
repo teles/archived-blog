@@ -1,7 +1,7 @@
 # Site settings
 title: Raio frontendizador!
 email: raio.frontendizador@gmail.com
-description: > 
+description: >
   Raio frontendizador! Blog sobre desenvolvimento front end.
   HTML, CSS, Javascript, por Jota Teles.
 baseurl: ""
@@ -17,6 +17,7 @@ google_analytics_id: UA-68664870
 disqus_shortname: jotateles
 
 # Build settings
+gems: [jekyll-paginate]
 markdown: kramdown
 paginate: 4
 paginate_path: "/pagina/:num/"
