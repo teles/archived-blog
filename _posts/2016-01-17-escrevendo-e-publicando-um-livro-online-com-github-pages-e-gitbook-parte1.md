@@ -43,7 +43,7 @@ No caso como minha organização se chama [versosdomundo](https://github.com/ver
 
 Apenas nomeando um repositório dessa maneira, o github já disponibiliza o conteúdo da branch master do meu repositório no endereço [http://versosdomundo.github.io](http://versosdomundo.github.io).
 
-	"Quer dizer que se eu tiver uma organização com nome minhaorganizacao e dentro dela um repositório de nome minhaorganizacao.github.io, o github irá disponiblizar meu repositório online no endereço http://minhaorganizacao.github.io ?"
+"Quer dizer que se eu tiver uma organização com nome minhaorganizacao e dentro dela um repositório de nome minhaorganizacao.github.io, o github irá disponiblizar meu repositório online no endereço http://minhaorganizacao.github.io ?"
 
 Exatamente, existem outras maneiras de hospedar seu site no github pages, mas para organizações é assim que funciona!
 
