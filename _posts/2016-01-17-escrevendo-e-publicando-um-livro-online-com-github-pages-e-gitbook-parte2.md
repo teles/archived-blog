@@ -97,8 +97,10 @@ Nesse ponto eu poderia ter alterado o website.sass para incluir o css necessári
 
 E no arquivo [temas/poesia.sass](https://github.com/versosdomundo/versosdomundo.github.io/blob/master/sass/temas/_poesia.sass) adicionei o css para correção das quebras de linha:
 
+```sass
 	.book-chapter + .section
 		white-space: pre-wrap
+```
 
 ![Poesia com quebra de linha](/images/minified/posts/gitbook/poesia-segunda-feira-com-quebra.png)
 
