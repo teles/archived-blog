@@ -23,7 +23,7 @@ Exemplo disso é que quando você declara uma factory, fazendo por exemplo:
 // Declaramos o módulo meu-modulo-maravilhoso
 angular.module('meu-modulo-maravilhoso', []);
 angular.module('meu-modulo-maravilhoso').factory('MinhaFactoryLinda', MinhaFactoryLinda);
-function MinhaFactoryLinda(){};
+function MinhaFactoryLinda(){}
 
 ```
 
