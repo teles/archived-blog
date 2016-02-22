@@ -1,21 +1,22 @@
 ---
 published: True
 layout: post
-title: 'Provider no angular: o que é, para que serve e como criar um'
+title: "Provider no angular: o que é, para que serve e como criar um"
 categories: 
   - javascript
 image: "https://pbs.twimg.com/tweet_video_thumb/CPrRVUsUkAAoFit.png"
 ---
 
-O angular (ou angularjs) oferece uma série de receitas para que desenvolvedores front-end criem aplicações bem estruturadas.
+O angular oferece uma série de receitas para que desenvolvedores front-end criem aplicações bem estruturadas.
 
-[Essas receitas](https://docs.angularjs.org/guide/providers) são os funções que usamos no cotidiano como directive, factory, value, constant e claro: Provider.
+[Essas receitas](https://docs.angularjs.org/guide/providers) são os funções que usamos no cotidiano como directive, factory, value, constant e claro: **provider**.
 
 ## O que é um Provider no angular?
 
 No angular o Provider é mãe de todas as outras receitas, as outras receitas mencionadas acima são formas diferentes de implementar um Provider.
 
 Exemplo disso é que quando você declara uma factory, fazendo por exemplo:
+
 
 ```javascript
 
@@ -36,11 +37,12 @@ Nesse post vou mostrar como o provider serve para prover (:P) uma interface para
     
     " You should use the Provider recipe only when you want to expose an API for application-wide configuration that must be made before the application starts. This is usually interesting only for reusable services whose behavior might need to vary slightly between applications".
 
+
 A configuração feita antes da aplicação iniciar mencionada pela documentação diz respeito a fase de configuração de um módulo angular.
 
-Quer dizer, um módulo angular possui um ciclo de vida que começa com uma função config() e segue para a função run().
+Quer dizer, um módulo angular possui um ciclo de vida que começa com uma função **config()** e segue para a função **run()**.
 
-Na fase de configuração, as factory adicionadas a um módulo ainda não foram "compiladas" pelo angular e **apenas estão disponíveis os providers dessas factory** para configuração.
+Na fase de configuração, as factory adicionadas a um módulo ainda não foram "*compiladas*" pelo angular e **apenas estão disponíveis os providers dessas factory** para configuração.
 
 ### Exemplo:
 
@@ -76,7 +78,7 @@ Para mostrar como é primeiro vou mostrar como criar uma factory angular sem dec
 
 ### Criando uma factory angular sem declarar seu provider
 
-**PS**: Não sou um fã das funções anônimas do javascript, por isso nestes exemplos utilizo o padrão revealing model para escrever as funções necessárias.
+**PS**: Não sou um fã das funções anônimas do javascript, por isso nestes exemplos utilizo o padrão *revealing module* para escrever as funções necessárias.
 
 ```javascript
 
@@ -148,7 +150,9 @@ angular.module('minha-outra-aplicacao').run(function(MinhaFactoryLinda){
 
 ```
 
+
 É isso!
+
 
 ## Se liga aí que agora é hora da revisão!
 
@@ -165,6 +169,6 @@ Usar providers no angular como o ```$httpProvider``` e o ```$interpolateProvider
 
 E aí, dúvidas? Achou legal? Compartilhará com os *brother*? 
 
-Caso o assunto interesse a alguém volto aqui no raio frontendizador para dar um exemplo mais realista da utilização de um provider.
+Caso o assunto interesse a alguém volto aqui no [raio frontendizador](http://jotateles.com.br) para dar um exemplo mais realista da utilização de um provider.
 
 Abraços, frontaiada.
