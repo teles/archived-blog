@@ -9,17 +9,19 @@ image: "/images/minified/posts/providers/providers-no-angular-dicaprio.jpg"
 
 O angular oferece uma série de receitas para que desenvolvedores front-end criem aplicações bem estruturadas.
 
-[Essas receitas](https://docs.angularjs.org/guide/providers) são os funções que usamos no cotidiano como directive, factory, value, constant e claro: **provider**.
+[Essas receitas](https://docs.angularjs.org/guide/providers) são as funções que usamos no cotidiano como directive, factory, value, constant e claro: **provider**.
 
-## O que é um Provider no angular?
+## O que é um provider no angular?
 
-No angular o Provider é mãe de todas as outras receitas, as outras receitas mencionadas acima são formas diferentes de implementar um Provider.
+No angular o provider é mãe de todas as outras receitas, as outras receitas mencionadas acima são formas diferentes de implementar um Provider.
 
 Exemplo disso é que quando você declara uma factory, fazendo por exemplo:
 
 
 ```javascript
 
+// Declaramos o módulo meu-modulo-maravilhoso
+angular.module('meu-modulo-maravilhoso', []);
 angular.module('meu-modulo-maravilhoso').factory('MinhaFactoryLinda', MinhaFactoryLinda);
 function MinhaFactoryLinda(){};
 
@@ -36,10 +38,10 @@ Nesse post vou mostrar como o provider serve para prover (:P) uma interface para
 [Segundo a documentação do angular sobre Provider](https://docs.angularjs.org/guide/providers):
     
 <blockquote>
-You should use the Provider recipe only when you want to expose an API for application-wide configuration that must be made before the application starts. This is usually interesting only for reusable services whose behavior might need to vary slightly between applications".
+"Você deve usar a receita do Provider apenas quando deseja export uma API para configurações que precisam ser feitas antes da inicialização da aplicação. Comumente isto é interessante apenas para serviços reutilizáveis cujo comportamento precise variar ligeiramente entre aplicações." (tradução livre)
 </blockquote>
 
-A configuração feita antes da aplicação iniciar mencionada pela documentação diz respeito a fase de configuração de um módulo angular.
+A configuração feita antes da inicialização da aplicação mencionada pela documentação diz respeito a fase de configuração de um módulo angular.
 
 Quer dizer, um módulo angular possui um ciclo de vida que começa com uma função **config()** e segue para a função **run()**.
 
@@ -49,22 +51,26 @@ Na fase de configuração, as factory adicionadas a um módulo ainda não foram 
 
 ```javascript
 
+// Criamos um módulo chamado meu-modulo-maravilhoso
 angular.module('meu-modulo-maravilhoso', []);
-// Criei um módulo chamado meu-modulo-maravilhoso
 
 // Declaramos uma factory MinhaFactoryLinda dentro do módulo meu-modulo-maravilhoso
 angular.module('meu-modulo-maravilhoso').factory('MinhaFactoryLinda', MinhaFactoryLinda);
-function MinhaFactoryLinda(){};
+function MinhaFactoryLinda(){}
 
 // Configuramos o meu-modulo-maravilhoso usando a função config()
 // Na função config() apenas os Provider existem
-angular.module('meu-modulo-maravilhoso').config(function(MinhaFactoryLindaProvider){
-    console.log(MinhaFactoryLinda); // imprime null
-    console.log(MinhaFactoryLindaProvider); // imprime um objeto vazio  
+angular.module('meu-modulo-maravilhoso').config(config);
+
+function config(MinhaFactoryLindaProvider){
+    console.log(MinhaFactoryLinda); // imprime "Uncaught Error: [$injector:undef]"
+    console.log(MinhaFactoryLindaProvider); // imprime um objeto com atributo $get
 });
 
 // Na função run() os Provider não são mais acessíveis, apenas as factory
-angular.module('meu-modulo-maravilhoso').run(function(MinhaFactoryLinda){
+angular.module('meu-modulo-maravilhoso').run(run);
+
+function run(MinhaFactoryLinda){
     console.log(MinhaFactoryLinda); // imprime um objeto
     console.log(MinhaFactoryLindaProvider); // imprime null
 });
@@ -105,11 +111,11 @@ Na sua aplicação você deseja que o valor de ```nomeDoMeuFrameworkJSFavorito``
 
 ```javascript
 
-angular.module('meu-modulo-maravilhoso').provider('MinhaFactoryLinda', MinhaFactoryLindaProvider);
 // Registrei o provider MinhaFactoryLinda dentro do módulo meu-modulo-maravilhoso
+angular.module('meu-modulo-maravilhoso').provider('MinhaFactoryLinda', MinhaFactoryLindaProvider);
 
 function MinhaFactoryLindaProvider(){
-    var nomeDoMeuFrameworkJSFavorito; // é necessário declarar a variável que queremos acessar dentro da factory dentro do provider para que ela seja acessível via closure
+    var nomeDoMeuFrameworkJSFavorito = null; // é necessário declarar a variável que queremos acessar dentro da factory dentro do provider para que ela seja acessível via closure
 
     var provider = {
         $get: MinhaFactoryLinda,
@@ -119,13 +125,13 @@ function MinhaFactoryLindaProvider(){
 
     // Implemento a minha função de configuração dentro do provider
     function setNomeDoMeuFrameworkJSFavorito(paramNomeDoMeuFrameworkJavascriptFavorito){
-        nomeDoMeuFrameworkJSFavorito: paramNomeDoMeuFrameworkJavascriptFavorito;
+        nomeDoMeuFrameworkJSFavorito = paramNomeDoMeuFrameworkJavascriptFavorito;
     }
 
     // Implemento a factory dentro do provider
     function MinhaFactoryLinda(){
         var model = {
-          nomeDoMeuFrameworkJSFavorito: null
+          nomeDoMeuFrameworkJSFavorito: nomeDoMeuFrameworkJSFavorito
         };
         return model;
     }
@@ -151,9 +157,7 @@ angular.module('minha-outra-aplicacao').run(function(MinhaFactoryLinda){
 
 ```
 
-
 É isso!
-
 
 ## Se liga aí que agora é hora da revisão!
 
