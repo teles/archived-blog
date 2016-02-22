@@ -4,7 +4,7 @@ layout: post
 title: "Provider no angular: o que é, para que serve e como criar um"
 categories: 
   - javascript
-image: "https://pbs.twimg.com/tweet_video_thumb/CPrRVUsUkAAoFit.png"
+image: "/images/minified/posts/providers/providers-no-angular-dicaprio.jpg"
 ---
 
 O angular oferece uma série de receitas para que desenvolvedores front-end criem aplicações bem estruturadas.
