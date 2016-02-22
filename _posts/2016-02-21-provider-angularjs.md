@@ -35,8 +35,9 @@ Nesse post vou mostrar como o provider serve para prover (:P) uma interface para
 
 [Segundo a documentação do angular sobre Provider](https://docs.angularjs.org/guide/providers):
     
-    " You should use the Provider recipe only when you want to expose an API for application-wide configuration that must be made before the application starts. This is usually interesting only for reusable services whose behavior might need to vary slightly between applications".
-
+<blockquote>
+You should use the Provider recipe only when you want to expose an API for application-wide configuration that must be made before the application starts. This is usually interesting only for reusable services whose behavior might need to vary slightly between applications".
+</blockquote>
 
 A configuração feita antes da aplicação iniciar mencionada pela documentação diz respeito a fase de configuração de um módulo angular.
 
