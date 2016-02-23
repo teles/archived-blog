@@ -50,30 +50,46 @@ Na fase de configuração, as factory adicionadas a um módulo ainda não foram 
 ### Exemplo:
 
 ```javascript
+(function(){
 
-// Criamos um módulo chamado meu-modulo-maravilhoso
-angular.module('meu-modulo-maravilhoso', []);
+    // Criamos um módulo chamado meu-modulo-maravilhoso
+    angular.module('meu-modulo-maravilhoso', []);
 
-// Declaramos uma factory MinhaFactoryLinda dentro do módulo meu-modulo-maravilhoso
-angular.module('meu-modulo-maravilhoso').factory('MinhaFactoryLinda', MinhaFactoryLinda);
-function MinhaFactoryLinda(){}
+    // Declaramos uma factory MinhaFactoryLinda dentro do módulo meu-modulo-maravilhoso
+    angular.module('meu-modulo-maravilhoso').factory('MinhaFactoryLinda', MinhaFactoryLinda);
+    function MinhaFactoryLinda(){
+        var factory = {
+            nomeDoMeuFrameworkJSFavorito: null
+        };
+        return factory;
+    }   
+})();
 
-// Configuramos o meu-modulo-maravilhoso usando a função config()
-// Na função config() apenas os Provider existem
-angular.module('meu-modulo-maravilhoso').config(config);
+```
 
-function config(MinhaFactoryLindaProvider){
-    console.log(MinhaFactoryLinda); // imprime "Uncaught Error: [$injector:undef]"
-    console.log(MinhaFactoryLindaProvider); // imprime um objeto com atributo $get
-});
+Em outro arquivo continuamos com as configurações do módulo:
 
-// Na função run() os Provider não são mais acessíveis, apenas as factory
-angular.module('meu-modulo-maravilhoso').run(run);
+```javascript
+(function(){
+    // Configuramos o meu-modulo-maravilhoso usando a função config()
+    // Na função config() apenas os Provider existem
+    angular.module('meu-modulo-maravilhoso').config(config);
 
-function run(MinhaFactoryLinda){
-    console.log(MinhaFactoryLinda); // imprime um objeto
-    console.log(MinhaFactoryLindaProvider); // imprime null
-});
+    function config(MinhaFactoryLindaProvider){
+        // console.log(MinhaFactoryLinda); // imprime "Uncaught Error: [$injector:modulerr]" e trava a aplicação
+        // console.log(MinhaFactoryLindaProvider); // imprime um objeto com atributo $get
+    }
+
+    // Na função run() os Provider não são mais acessíveis, apenas as factory
+    angular.module('meu-modulo-maravilhoso').run(run);
+
+    // function run(){
+    function run(MinhaFactoryLinda){
+        console.log(MinhaFactoryLinda); // imprime um objeto com um atributo nomeDoMeuFrameworkJSFavorito
+        console.log(MinhaFactoryLindaProvider); // imprime "Uncaught ReferenceError" e trava a aplicação
+
+    }
+})();
 
 ```
 
@@ -111,49 +127,69 @@ Na sua aplicação você deseja que o valor de ```nomeDoMeuFrameworkJSFavorito``
 
 ```javascript
 
-// Registrei o provider MinhaFactoryLinda dentro do módulo meu-modulo-maravilhoso
-angular.module('meu-modulo-maravilhoso').provider('MinhaFactoryLinda', MinhaFactoryLindaProvider);
+(function(){
 
-function MinhaFactoryLindaProvider(){
-    var nomeDoMeuFrameworkJSFavorito = null; // é necessário declarar a variável que queremos acessar dentro da factory dentro do provider para que ela seja acessível via closure
+    // Criamos um módulo chamado meu-modulo-maravilhoso
+    angular.module('meu-modulo-maravilhoso', []);
 
-    var provider = {
-        $get: MinhaFactoryLinda,
-        setNomeDoMeuFrameworkJSFavorito: setNomeDoMeuFrameworkJSFavorito
-    };
-    return provider;
+    // Registrei o provider MinhaFactoryLinda dentro do módulo meu-modulo-maravilhoso
+    angular.module('meu-modulo-maravilhoso').provider('MinhaFactoryLinda', MinhaFactoryLindaProvider);
 
-    // Implemento a minha função de configuração dentro do provider
-    function setNomeDoMeuFrameworkJSFavorito(paramNomeDoMeuFrameworkJavascriptFavorito){
-        nomeDoMeuFrameworkJSFavorito = paramNomeDoMeuFrameworkJavascriptFavorito;
-    }
+    function MinhaFactoryLindaProvider(){
 
-    // Implemento a factory dentro do provider
-    function MinhaFactoryLinda(){
-        var model = {
-          nomeDoMeuFrameworkJSFavorito: nomeDoMeuFrameworkJSFavorito
+        // Crio um objeto de configure dentro do provider
+        // Esse objeto irá conter as funções e variáveis acessíveis via closure do provider na fase de configuração
+        var configure = {
+            setNomeDoMeuFrameworkJSFavorito: setNomeDoMeuFrameworkJSFavorito,
+            nomeDoMeuFrameworkJSFavorito: null          
         };
-        return model;
-    }
 
-}
+        var provider = {
+            $get: MinhaFactoryLinda,
+            configure: configure
+        };
+        return provider;
+
+        // Implemento a minha função de configuração dentro do provider
+        function setNomeDoMeuFrameworkJSFavorito(nomeDoMeuFrameworkJSFavorito){
+            configure.nomeDoMeuFrameworkJSFavorito = nomeDoMeuFrameworkJSFavorito;
+        }
+
+        // Implemento a factory dentro do provider
+        function MinhaFactoryLinda(){
+            var model = {
+              nomeDoMeuFrameworkJSFavorito: configure.nomeDoMeuFrameworkJSFavorito
+            };
+            return model;
+        }
+    }
+})();
 
 ```
 
 
-A partir de agora, podemos fazer o seguinte:
+A partir de agora, podemos fazer o seguinte no arquivo de configuração do módulo:
 
 ```javascript
 
-angular.module('minha-outra-aplicacao', ['meu-modulo-maravilhoso']);
+(function(){
+    // Criamos um novo módulo que depende do módulo meu-modulo-maravilhoso
+    angular.module('minha-outra-aplicacao', ['meu-modulo-maravilhoso']);
 
-angular.module('minha-outra-aplicacao').config(function(MinhaFactoryLindaProvider){
-    MinhaFactoryLindaProvider.setNomeDoMeuFrameworkJSFavorito('react');
-});
+    angular.module('minha-outra-aplicacao').config(config);
 
-angular.module('minha-outra-aplicacao').run(function(MinhaFactoryLinda){
-    console.log(MinhaFactoryLinda.nomeDoMeuFrameworkJSFavorito); // imprime 'react'
-});
+    // Configuro o MinhaFactoryLindaProvider na fase de configuração do módulo
+    function config(MinhaFactoryLindaProvider){
+        MinhaFactoryLindaProvider.setNomeDoMeuFrameworkJSFavorito('react');
+    }
+
+    angular.module('minha-outra-aplicacao').run(run);
+
+    // Rodo o módulo para exibir o resultado da fase de configuração
+    function run(MinhaFactoryLinda){
+        console.log(MinhaFactoryLinda.nomeDoMeuFrameworkJSFavorito); // imprime 'react'
+    }
+})();
 
 ```
 
@@ -166,13 +202,13 @@ angular.module('minha-outra-aplicacao').run(function(MinhaFactoryLinda){
 * Um provider implementa um método $get que retorna uma Factory;
 * Se você não declarar um provider para sua factory o angular irá fazer isso por conta própria debaixo dos panos;
 * Um módulo angular possui fases, e a fase de configuração é acessível via função config();
-* Na função config os factory ainda não existem, apenas os provider
+* Na função config() os factory ainda não existem, apenas os provider;
 * Na fase de run() os provider já não estão mais disponíveis;
 * Por isso usa-se um provider quando se quer que uma factory angular possa ser configurada de modos diferentes em aplicações diferentes;
 
 Usar providers no angular como o ```$httpProvider``` e o ```$interpolateProvider``` é comum no dia a dia, mas agora você também deve ter a habilidade para criar seus providers quando isso for necessário.
 
-E aí, dúvidas? Achou legal? Compartilhará com os *brother*? 
+E aí, dúvidas? Achou legal? <a href='https://www.facebook.com/sharer/sharer.php?u=http://jotateles.com.br/javascript/2016/02/21/provider-angularjs.html'>Compartilhará com a galerinha? </a>
 
 Caso o assunto interesse a alguém volto aqui no [raio frontendizador](http://jotateles.com.br) para dar um exemplo mais realista da utilização de um provider.
 
