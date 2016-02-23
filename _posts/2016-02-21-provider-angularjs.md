@@ -58,10 +58,10 @@ Na fase de configuração, as factory adicionadas a um módulo ainda não foram 
     // Declaramos uma factory MinhaFactoryLinda dentro do módulo meu-modulo-maravilhoso
     angular.module('meu-modulo-maravilhoso').factory('MinhaFactoryLinda', MinhaFactoryLinda);
     function MinhaFactoryLinda(){
-        var factory = {
+        var model = {
             nomeDoMeuFrameworkJSFavorito: null
         };
-        return factory;
+        return model;
     }   
 })();
 
