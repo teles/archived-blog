@@ -180,7 +180,7 @@ A partir de agora, podemos fazer o seguinte no arquivo de configuração do mód
 
     // Configuro o MinhaFactoryLindaProvider na fase de configuração do módulo
     function config(MinhaFactoryLindaProvider){
-        MinhaFactoryLindaProvider.setNomeDoMeuFrameworkJSFavorito('react');
+        MinhaFactoryLindaProvider.configure.setNomeDoMeuFrameworkJSFavorito('react');
     }
 
     angular.module('minha-outra-aplicacao').run(run);
