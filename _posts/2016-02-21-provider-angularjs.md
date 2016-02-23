@@ -31,14 +31,14 @@ O angular automaticamente irá criar para você um Provider por baixo dos panos,
 
 E para que isso serve? Já vou explicar.
 
-## Para que serve um Provider do angular?
+## Para que serve um provider do angular?
 
 Nesse post vou mostrar como o provider serve para prover (:P) uma interface para configuração de uma factory.
 
 [Segundo a documentação do angular sobre Provider](https://docs.angularjs.org/guide/providers):
     
 <blockquote>
-"Você deve usar a receita do Provider apenas quando deseja export uma API para configurações que precisam ser feitas antes da inicialização da aplicação. Comumente isto é interessante apenas para serviços reutilizáveis cujo comportamento precise variar ligeiramente entre aplicações." (tradução livre)
+"Você deve usar a receita do Provider apenas quando deseja expor uma API para configurações que precisam ser feitas antes da inicialização da aplicação. Comumente isto é interessante apenas para serviços reutilizáveis cujo comportamento precise variar ligeiramente entre aplicações." (tradução livre)
 </blockquote>
 
 A configuração feita antes da inicialização da aplicação mencionada pela documentação diz respeito a fase de configuração de um módulo angular.
@@ -76,8 +76,8 @@ Em outro arquivo continuamos com as configurações do módulo:
     angular.module('meu-modulo-maravilhoso').config(config);
 
     function config(MinhaFactoryLindaProvider){
-        // console.log(MinhaFactoryLinda); // imprime "Uncaught Error: [$injector:modulerr]" e trava a aplicação
-        // console.log(MinhaFactoryLindaProvider); // imprime um objeto com atributo $get
+        console.log(MinhaFactoryLinda); // imprime "Uncaught Error: [$injector:modulerr]" e trava a aplicação
+        console.log(MinhaFactoryLindaProvider); // imprime um objeto com atributo $get
     }
 
     // Na função run() os Provider não são mais acessíveis, apenas as factory
