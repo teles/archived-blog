@@ -2,6 +2,7 @@
 layout: post
 title: 06 perguntas e respostas para quem quer começar no desenvolvimento front-end.
 categories: []
+image: "/images/minified/posts/alemdohtmlecss/htmlcssjavascriptgithub.png"
 published: True
 
 ---
