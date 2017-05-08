@@ -1,10 +1,8 @@
 ---
 layout: post
 title: 06 perguntas e respostas para quem quer começar no desenvolvimento front-end.
-categories: []
-image: "/images/minified/posts/alemdohtmlecss/htmlcssjavascriptgithub.png"
 published: True
-
+image: "/images/minified/posts/alemdohtmlecss/htmlcssjavascriptgithub.png"
 ---
 
 Recentemente recebí o contato de um usuário no linkedin. Esse usuário tem 29 anos é estudante de engenharia mecânica e ainda não trabalha com desenvolvimento mas gostaria de começar e por isso me fez algumas perguntas sobre a área de front-end na qual ele deseja trabalhar.
