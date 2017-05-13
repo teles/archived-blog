@@ -22,7 +22,11 @@ Não sei responder com precisão. A empresa onde trabalho hoje aceita como desen
 
 A profissão de desenvolvedor front-end não me parece difícil para quem está começando e pode ser até mais fácil no começo do que outras profissões parecidas como desenvolvedor android, ios, back-end ou devops. Motivo: o desenvolvedor front-end precisa de poucos recursos para praticar! Uma conta no github.com ou no codepen.io já te oferecem gratuitamente o espaço que você precisa para estudar, copiar e publicar seus projetos com html, javascript e css. A área é farta de material para estudo, farta mesmo. Minha impressão é de que a área de desenvolvimento front-end é a que mais lança novos recursos. Torna-se até um problema conseguir selecionar o que estudar, o que no médio prazo pode aumentar a complexidade de gerenciar sua carreira mas também pode servir de estímulo. Evite ser o cara que acha que front-end é simples demais. Também evite ser o cara que diz que não pode mostrar o próprio trabalho embora possua projetos pessoais.
 
-Dicas para achar um emprego na área (não especificamente o primeiro) : 1) ter trabalho para mostrar é mais importante do que ter diploma, quer dizer, uma empresa mais moderna vai gostar mais de ver sua atividade no github do que seu título superior; 2) sempre diga que pode participar de processos seletivos a menos que a vaga seja péssima pois todo processo seletivo pode servir de treino; 3) ao pensar em projetos pessoais evite ser megalomaníaco e se envolver em projetos que pretendem fazer muita coisa, investir em projetos menores oferece uma oportunidade de ter contato com mais tecnologias, mais ideias e mais pessoas mais rápido - não considere um projeto como bobo. Esse projeto, por exemplo, foi levado em conta na minha última contratação: http://jotateles.com.br/pure-css-parallel-park, código dele: http://codepen.io/teles/pen/gbKeLR
+Dicas para achar um emprego na área (não especificamente o primeiro) : 
+
+* 1) ter trabalho para mostrar é mais importante do que ter diploma, quer dizer, uma empresa mais moderna vai gostar mais de ver sua atividade no github do que seu título superior; 
+* 2) sempre diga que pode participar de processos seletivos a menos que a vaga seja péssima pois todo processo seletivo pode servir de treino; 
+* 3) ao pensar em projetos pessoais evite ser megalomaníaco e se envolver em projetos que pretendem fazer muita coisa, investir em projetos menores oferece uma oportunidade de ter contato com mais tecnologias, mais ideias e mais pessoas mais rápido - não considere um projeto como bobo. Esse projeto [Pure CSS Parallel Park](http://jotateles.com.br/pure-css-parallel-park), por exemplo, foi levado em conta na minha última contratação: [código dele no codepen](http://codepen.io/teles/pen/gbKeLR): 
 
 ### 4 - Na sua visão qual o mínimo aceitável de conhecimento que eu tenho q ter pra tentar arrumar emprego nessa área?
 
@@ -53,8 +57,8 @@ Cada pessoa tem um ritmo e uma forma de aprendizado diferente. Mesmo assim acho 
 
 Aproveito para mencionar uma iniciativa chamada Training Center.
 
-Aqui tem o medium do Training Center com posts de profissionais da web: https://medium.com/trainingcenter
-Aqui tem o github do projeto de mentoria do Training Center onde você pode se cadastrar e encontrar profissionais da área.
+[Aqui tem o medium do Training Center com posts de profissionais da web](https://medium.com/trainingcenter) 
+[Aqui tem o github do projeto de mentoria do Training Center onde você pode se cadastrar e encontrar profissionais da área.](https://github.com/training-center)
 
 ## Conclusão
 
