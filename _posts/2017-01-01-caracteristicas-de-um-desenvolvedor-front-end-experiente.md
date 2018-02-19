@@ -2,8 +2,7 @@
 layout: post
 title: Quais as características de um desenvolvedor front-end experiente?
 categories: []
-published: False
-
+published: true
 ---
 
 Quais as características esperadas de um desenvolvedor front-end experiente? A questão surgiu para mim quando um amigo me perguntou o que ele precisaria fazer para ser um desenvolvedor front-end com um salário alto e trabalhar em uma empresa que reconheça seu trabalho.
@@ -14,7 +13,7 @@ Ou seja, a lista tem um ponto de vista muito pessoal e eu não sou o dono da ver
 
 ## Um desenvolvedor front end experiente precisa ser capaz de:
 
-* Criar uma single page application inteira, gerenciando as rotas via javascript.
+* Criar uma single page application inteira, gerenciando as rotas via JS.
 * Organizar um projeto de front com uma divisão clara de componentes.
 * Versionar o código de maneira a mantê-lo estável.
 * Ajudar sua equipe a resolver conflitos de versisonamento de código assim que eles apareçam: não postergar conflitos.
@@ -35,6 +34,3 @@ Ou seja, a lista tem um ponto de vista muito pessoal e eu não sou o dono da ver
 * Alguma noção de como empacotas código front end e entrega-lo via npm, bower ou algum cdn;
 * Também tem que ter alguma noção sobre a melhor maneira de entregar arquivos estáticos.
 * Alguma noção sobre cabeçalho de respostas HTTP;
-
-
-
