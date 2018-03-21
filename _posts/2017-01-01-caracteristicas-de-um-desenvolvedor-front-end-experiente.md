@@ -2,7 +2,7 @@
 layout: post
 title: Quais as características de um desenvolvedor front-end experiente?
 categories: []
-published: true
+published: false
 ---
 
 Quais as características esperadas de um desenvolvedor front-end experiente? A questão surgiu para mim quando um amigo me perguntou o que ele precisaria fazer para ser um desenvolvedor front-end com um salário alto e trabalhar em uma empresa que reconheça seu trabalho.
