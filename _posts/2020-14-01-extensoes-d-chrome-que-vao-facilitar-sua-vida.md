@@ -1,10 +1,8 @@
 ---
 layout: post
 title: Extensões do Chrome que vão facilitar sua vida
-categories: [front-links]
-image: "https://cdn.pixabay.com/photo/2013/01/29/00/47/google-76517_1280.png"
 published: true
-
+image: https://cdn.pixabay.com/photo/2013/01/29/00/47/google-76517_1280.png
 ---
 
 Texto por: Davi Gomes do [TechWarm](https://techwarn.com/)
