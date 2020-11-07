@@ -2,7 +2,7 @@
 layout: post
 title: Extensões do Chrome que vão facilitar sua vida
 published: true
-image: https://cdn.pixabay.com/photo/2013/01/29/00/47/google-76517_1280.png
+image: 'https://cdn.pixabay.com/photo/2013/01/29/00/47/google-76517_1280.png'
 ---
 
 Texto por: Davi Gomes do [TechWarm](https://techwarn.com/)
@@ -17,6 +17,9 @@ os que instalamos em nossos próprios navegadores. Experimente e transforme sua 
 online.
 
 ## ExpressVPN
+
+![c338f9811b26fe50a17e8a285287b782.jpg]({{site.baseurl}}/_posts/c338f9811b26fe50a17e8a285287b782.jpg)
+
 
 Uma das poucas VPNs que possuem extensão para Chrome e a mais fácil de utilizar. Uma
 VPN criptografa e protege todos os dados transitados de um dispositivo para outro pela internet
