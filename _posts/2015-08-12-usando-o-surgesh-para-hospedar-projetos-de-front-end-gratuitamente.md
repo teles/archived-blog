@@ -47,8 +47,6 @@ Sabemos que existem outras maneiras de um front ender esperto publicar seu proje
 
 **Se você precisa de um cdn mas o github não expõe seus arquivos com content-type correto.** Se você tentar usar o github como cdn logo vai notar alguns problemas, pois independente do tipo de arquivo que está no seu repositório, a url do arquivo no formato raw é sempre a url de um arquivo de texto. Ou seja, você pode ter problemas colocando um js, html, xml ou css aí, pois eles serão lidos como arquivos de texto.
 
-![](/uploads/captura-de-tela-2021-09-21-as-13-55-07.png)
-
 O [rawgit](http://rawgit.com) resolve bem esse problema, com o contratempo de gerar um nome muito grande de arquivo para você usar.
 
 Por exemplo: Precisei subir alguns arquivos xml de [um repositório github](http://github.com/teles/yql-tables) com content-type correto e a url do arquivo no rawgit foi:
